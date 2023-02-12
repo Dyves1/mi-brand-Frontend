@@ -1,0 +1,358 @@
+@media only screen and (max-width:820px) {
+    section {
+    margin-left: 5%;
+
+    }
+    .navbar.active{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items:flex-start;
+        flex-direction: column;
+        margin-left: 40vw;
+        background: #D9D9D9;
+        height: 60vh;
+        justify-content: space-around;
+    }
+    .navbar a {
+        padding: 1rem;
+        margin: 0;
+        border: none;
+        color:black;
+        /* opacity: 0.7; */
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .nav-btn {
+        margin: 0;
+        padding-left: 30px;
+    }
+    .navbar a:hover {
+        color: #FEA609;
+    }
+    #menu-icon {
+        display: block;
+        margin-left: 80vw;
+        font-size: xx-large;
+        cursor: pointer;
+    }
+
+    #logo {
+        display: flex;
+        font-size: 40vh;
+    }
+    .home {
+        height: 100vh;
+        background-color: black;
+        background-image:url('now1.jpg');
+        background-repeat:no-repeat;
+        background-size: 80%;
+        background-position: center top 30px;
+    }
+    h1 {
+        font-size: 6vh;
+        padding-bottom:20px;
+        padding-left: 0;
+        margin-top: 60vh;
+        color: red;
+    
+    }
+    .cv-btn button {
+        border-radius: 8px;
+        font-size: 3vh;
+        background: #fff;
+        padding: 1vh;
+        border: none;
+        
+    }
+    .cv-btn {
+    margin-left:20%;
+    padding-top: 3vh;
+       
+    }
+    h4 {
+        font-size: x-small;
+        line-height: 1;
+        font-size: 3.5vw;
+        font-weight: 25;
+        margin-left: 0px;
+    }
+    /* -----the start of about me page----- */
+    h2 {
+        padding-top: 5vh;
+        font-size: 5vh;
+        
+    
+    }
+    .abt1 h4 {
+        font-size: 4vw;
+        line-height: 1;
+        font-size: 3vh;
+        font-weight: 25;
+        margin-left: -50px;
+    }
+    .abt{
+        display: block;    
+        margin-left: 0;
+    }
+    .abt1 {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    
+        padding: 40px;
+    }
+     .abt1 i {
+        
+        font-size: 5vh;
+        padding: 5px;
+        padding-top: 40px;
+    }
+    .abt2 {
+        margin: 0;
+        margin-left: 0;
+        font-size: 3.5vh;
+    }
+    .abt2 i {
+        font-size: 4vw;
+        padding: 5px;
+    }
+    /*----the start of about-me------*/
+    /*-----the start of my-skills -------*/
+    .skill {
+        display: inline;
+        margin: 0;
+    
+    }
+    .container-1{
+        display: none;
+    }
+    
+    .container-2{
+        display: none;
+      
+    }
+    .lan{
+        display: none;
+    }
+    h3 {
+        margin: 0;
+        padding: 2vh;
+        background: #D9D9D9;
+        color:#000;
+        text-align: center;
+        border-radius: 2vh;
+        margin-top: 5vh;
+        font-size: 4vh;
+    }
+    .skill2{
+        padding-left: 0;
+        margin-left: 0;
+    }
+     /*-------The start of my-work------*/
+
+     .my-work-content {
+        display: inline;
+        margin: 2vh;
+    }
+    .my-work-content .row img {
+        max-width: 100%;
+        width: 100vw;
+        /* height: 15vh;  */
+    }
+
+    .row{
+  
+        background: #D9D9D9;
+        width: auto;
+        height: auto;
+        margin-top: 5vh;
+        
+    }
+    .row a{
+        text-decoration: none;
+        color: black;
+        font-size: 3vh;
+    }
+    /*-----the end of my-work page---*/
+    /*------the start of blog--------*/
+    .blog-content {
+        display: inline;
+    }
+    .blog-content .row img {
+        max-width: 100%;
+        width: 100vw;
+        /* height: 15vh; */
+    }
+    h6{
+        display: none;
+    }
+    /*------the end of blog----*/
+    /*-------the start of contact me-----*/
+    .contact-me1{
+        display: block;
+        /* margin-top: 80px; */
+    }
+    
+    .contact-me1 h4 {
+        /* padding-top: 50px; */
+        font-size: 3vh;
+        margin-left: 0;
+    }
+    
+    .cont1 i {
+        font-size: 3vh;
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+    
+    
+    .cont input {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        background: none;
+        margin: 0;
+        width: 70vw;
+       
+    }
+    .cont label {
+        font-size: 2vh;
+    }
+    
+    .cont {
+        height: auto;
+        border:none;
+        width: auto;
+        margin-left: 0;
+    
+    }
+    .cont form {
+        padding: 10px;    
+    }
+    h5 {
+        padding: 20px;
+        font-size: 3vh;
+    }
+    .send {
+        height: auto;
+        width: auto;
+        border-radius: 1vh;
+        padding: 10px;
+        background: white;
+        color: black;
+        border-color: black;
+        border-style: solid;
+        box-shadow: #000;
+        margin-top: 10px;
+        margin-left: 0;
+        font-size: 2vh;
+    } 
+    .send br {
+        display: none;
+    }
+    /* ----the end of contact me page---- */
+    /* -----the start of login page---- */
+    .form1 {
+        background: rgba(217, 217, 217, 0.24);
+        height: auto;
+        width: auto;
+        margin: 20vh 5vw 400px 5vw;
+        border-radius: 30px;
+        border-style: none;
+    
+    }
+    .form1 input {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        background: none;
+        border-bottom: #fff solid;
+        padding: 10px;
+        width: 200px;
+    
+       
+    }
+    .form1 label {
+    
+        color: white;
+       
+    }
+    .form1 form {
+        padding: 50px;
+    }
+    
+    .form1 label {
+        font-size: large;
+    }
+    .form1 button {
+        background: #FEA609;
+        margin-top:60px;
+        margin-left: 70%;
+        padding: 10px;
+        font-size: small;
+        border-radius: 10px;
+        border: none;
+    
+    }
+    .arrow i{
+        background:white;
+        border-radius: 50%;
+        margin-top: 5vh;
+        margin-left: 3vw;
+        font-size: xx-large;
+        color: black;
+        border: #000 solid;
+    }
+    .form1 {
+        background: rgba(217, 217, 217, 0.24);
+        height: auto;
+        width: auto;
+        /* margin: 100px 400px 400px 400px; */
+        border-radius: 30px;
+        margin: 10vh;
+        border-style: none;
+    
+    }
+    .form1 input {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        background: none;
+        border-bottom: #fff solid;
+        padding: 10px;
+        width: 40vw;
+    
+       
+    }
+    .form1 label {
+    
+        color: white;
+       
+    }
+    .form1 form {
+        padding: 50px;
+    }
+    
+    .form1 label {
+        font-size: x-large;
+    }
+    .form1 button {
+        background: #FEA609;
+        margin-top:60px;
+        margin-left: 80%;
+        padding: 10px;
+        font-size: 2vh;
+        border-radius: 10px;
+        border: none;
+    
+    }
+    .form1 button:hover {
+        opacity: 0.6;
+        color: #D9D9D9;
+    }
+
+
+}

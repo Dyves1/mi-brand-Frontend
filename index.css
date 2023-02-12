@@ -1,0 +1,1569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+color: white;
+font-family: 'Inter', sans-serif;
+background: rgba(0,0,0, 0.8);
+/* margin: 0; */
+}
+/*------ the start of header-----*/
+header {
+    width: 100%;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    z-index: 4;
+    background: rgba(0,0,0, 0.6);
+    
+}
+
+.logo-text {
+    margin: 0 0 0 27px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Kaushan script';
+    font-size: 5vh;
+}
+span {
+    color:#FEA609;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+.navbar ul {
+  justify-content: space-between;
+}
+.navbar li {
+    position: relative;
+    list-style: none; 
+    padding: 10px;
+  }
+.navbar a {
+    font-weight: 400px;
+    font-size: 4vh;
+    text-decoration: none;
+    color: #fff;
+}
+.navbar a:hover {
+    color: #FEA609;
+}
+.nav-btn {
+    justify-content: space-between;
+    margin: 20px;
+    padding-left: 10vw;
+    
+}
+
+
+.nav-btn a {
+    font-weight: 400px;
+    font-size: 4vh;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+
+.log-in-btn  {
+    background: #FEA609;
+    border-radius: 10px;
+    margin-right: 15px;
+    padding: 5px;
+}
+.log-in-btn a:hover {
+    color: white;   
+}
+#menu-icon {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    cursor: pointer;
+}
+
+/*--- the start of the Homepage-----*/
+section {
+    padding: 4vh; 
+    height: 100vh;
+   
+}
+.home {
+    height: 100vh;
+    background-color: black;
+    background-image:url('now1.jpg');
+    background-repeat:no-repeat;
+    background-size: 50%;
+    background-position: right 10px;
+}
+.home-text {
+    margin-left: 5vw;
+    margin-top: 40vh;
+}
+ h1 {
+    font-size: 50px;
+    padding-bottom:20px;
+    /* padding-left: 60px;
+    margin-top: 250px; */
+
+}
+
+.cv-btn button {
+    border-radius: 10px;
+    font-size: 4vh;
+    background: #fff;
+    padding: 10px;
+    border: none;
+    
+}
+.cv-btn {
+margin-left:80%;
+   
+}
+h4 {
+    font-size: medium;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 50;
+    /* margin-left: 60px; */
+}
+/*------the end of homepage------*/
+/*-----About me page------*/
+h2 {
+    color: #FEA609;
+    text-align: center;
+    padding-top: 80px;
+
+}
+
+.abt1 h4 {
+        font-size: medium;
+        line-height: 1.5;
+        font-size: 20px;
+        font-weight: 50;
+    
+}
+.abt{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: 0;
+}
+.abt1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 5vw;
+}
+ .abt1 i {
+    
+    font-size: 5vh;
+    padding: 1vw;
+    padding-top: 40px;
+}
+.abt2 {
+    margin: 0;
+    font-size: 4vh;
+    /* margin-left: 110px; */
+}
+.abt2 i {
+    /* font-size: xx-large; */
+    padding: 10px;
+}
+
+/*--------the start of Skills page---------*/
+
+.skill {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2vw;
+  
+} 
+.container-1{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-left: 5%;
+  
+}
+
+.container-1 div {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    /* height: 100px; */
+
+
+}
+.container-1 div i {
+    font-size: 10vh;
+    background: #FEA609;
+    padding: 10px;
+    /* height: 100px;
+    width: 100px; */
+    text-align: center;
+}
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: 5%;
+  
+}
+.container-2 div {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    /* height: 100px; */
+
+}
+.container-2 div i {
+    font-size: 3rem;
+    background: #FEA609;
+    padding: 10px;
+    /* height: 100px;
+    width: 100px; */
+    text-align: center;
+}
+
+
+h3 {
+    padding: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+
+}
+.lan{
+    padding-left: 5vh;
+}
+.skill2 {
+    margin-left: 10vw;
+}
+
+/*-----end of skills page*/
+/*-----the start of my-work page-----*/
+
+.my-work-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+    padding: 10vh;   
+}
+.my-work-content .row img {
+    max-width: 100%;
+    width: 50vw;
+    height: 40vh;
+}
+.my-work-content .row img:hover {
+    opacity: 0.6;
+}
+.row{
+    padding: 0 0 30px 0;
+    background: #D9D9D9;
+    width: 80%;
+}
+.row a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-weight: bold;
+}
+h6{
+    padding: 10px;
+    color:black;
+    font-size: small;
+}
+
+/*------the end of my-work page------*/
+/*-------the start of blog page------*/
+
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+    padding: 10vh; 
+    
+}
+.blog-content .row img {
+    max-width: 100%;
+    width: 50vw;
+    height: 40vh;
+}
+.blog-content .row img:hover {
+    opacity: 0.6;
+}
+.row{
+    padding: 0 0 30px 0;
+    background: #D9D9D9;
+    /* height: 380px; */
+    width: 80%;
+}
+.row a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-weight: bold;
+}
+.row a:hover {
+    color: #FEA609;
+}
+/*-------the end of blog page------*/
+/*-------the start of contact-me page------*/
+
+.contact-me1{
+    display: flex;
+    margin-top: 80px;
+}
+
+.contact-me1 h4 {
+    padding-top: 50px;
+    font-size: large;
+    padding-left: 5vw;
+}
+
+.cont1 i {
+    font-size: xx-large;
+    padding: 10px;
+    margin-bottom: 5vh;
+    padding-left: 3vw;
+}
+
+
+.cont input {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background: none;
+    margin: 0;
+    width: 20vw;
+    padding: 5px;
+   
+}
+.cont label {
+    font-size: smaller;
+}
+
+.cont {
+    height: auto;
+    border-radius: 50%;
+    width: auto;
+    margin-left: 60%;
+
+}
+.cont form {
+    padding: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+h5 {
+    padding: 20px;
+}
+.send {
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    background: white;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    box-shadow: #000;
+    margin-top: 380px;
+    margin-left: 70px;
+}
+#error-message {
+    background: red;
+    font-size: 2vh;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+
+
+/*-----the end of contact-me page--------*/
+/*------the start of login page------*/
+.arrow i{
+    background:white;
+    border-radius: 50%;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    font-size: xx-large;
+    color: black;
+    border: #000 solid;
+}
+.form1 {
+    background: rgba(217, 217, 217, 0.24);
+    height: auto;
+    width: auto;
+    margin: 100px 400px 400px 400px;
+    border-radius: 30px;
+    border-style: none;
+
+}
+.form1 input {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background: none;
+    border-bottom: #fff solid;
+    padding: 10px;
+    width: 200px;
+
+   
+}
+.form1 label {
+
+    color: white;
+   
+}
+.form1 form {
+    padding: 50px;
+}
+
+.form1 label {
+    font-size: x-large;
+}
+.form1 button {
+    background: #FEA609;
+    margin-top:60px;
+    margin-left: 80%;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+
+}
+.form1 button:hover {
+    opacity: 0.6;
+    color: #D9D9D9;
+}
+
+/*-------the end of login page------*/
+@media only screen and (max-width: 1200px) 
+/* and (min-width: 820px)  */
+{
+    section {
+        padding-left:0 ;
+    }
+    .logo-text {
+        margin: 0 0 0 27px;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Kaushan script';
+        font-size: x-large;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    .navbar ul {
+      justify-content: space-between;
+    }
+    .navbar li {
+        position: relative;
+        list-style: none; 
+        padding: 10px;
+      }
+    .navbar a {
+        font-weight: 400px;
+        font-size: 2vw;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .nav-btn {
+        justify-content: space-between;
+        margin: 20px;
+        padding-left: 10vw;
+        
+    }
+    .nav-btn a {
+        font-weight: 400px;
+        font-size: 2vw;
+     }
+     h1 {
+        font-size: 50px;
+        padding-bottom:20px;
+        padding-left: 0;
+        margin-top: 45vh;
+    
+    }
+    .home-text {
+        padding-left: 2vh;
+    }
+    
+    .cv-btn button {
+        border-radius: 10px;
+        font-size: 20px;
+        background: #fff;
+        padding: 10px;
+        border: none;
+        
+    }
+    .cv-btn {
+    margin-left:80%;
+       
+    }
+    h4 {
+        font-size: medium;
+        line-height: 1;
+        font-size: 20px;
+        font-weight: 50;
+        margin-left: 0;
+    }
+    .abt1 h4 {
+        /* font-size: medium; */
+        line-height: 1.5;
+        font-size: 3vh;
+        font-weight: 25;
+    
+}
+.abt{
+    display: flex;
+    /* align-items: flex-start; */
+    /* margin-top: 50px; */
+    margin-left: 0;
+    padding-left: 0;
+}
+.abt1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* padding: 40px; */
+}
+ .abt1 i {
+    
+    font-size: 4vh;
+    padding: 10px;
+    padding-top: 40px;
+}
+.abt2 {
+    margin: 0;
+    font-size: 3vh;
+    margin-left: 80px;
+}
+.abt2 i {
+    font-size: 4vh;
+    padding: 10px;
+}
+
+/*--------the start of Skills page---------*/
+
+.skill {
+    display: flex;
+    justify-content: space-around;
+    /* margin-left: 4vw; */
+  
+} 
+.container-1{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-left: 5%;
+  
+}
+
+.container-1 div {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    /* border: #093efe solid; */
+
+
+}
+.container-1 div i {
+    font-size: 5vh;
+    background: #FEA609;
+    padding: 10px;
+    height: 8vh;
+    width: 8vw;
+    text-align: center;
+}
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: 5%;
+  
+}
+.container-2 div {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+.container-2 div i {
+    font-size: 5vh;
+    background: #FEA609;
+    padding: 10px;
+    height: 8vh;
+    width: 8vw;
+    text-align: center;
+}
+
+
+h3 {
+    padding: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 3vh;
+
+}
+.lan{
+    padding-left: 5vh;
+    font-size: 3vh;
+}
+/* -----the start of my work----- */
+.my-work-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    grid-gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    padding: 0; 
+    padding-left: 4vw;  
+}
+.my-work-content .row img {
+    max-width: 100%;
+    width: 600px;
+    height: 250px;
+}
+.my-work-content .row img:hover {
+    opacity: 0.6;
+}
+.row{
+    padding: 0 0 30px 0;
+    background: #D9D9D9;
+    width: 80%;
+}
+.row a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 2vh;
+}
+h6{
+    padding: 10px;
+    color:black;
+    font-size: 1.2vw;
+}
+
+/*------the end of my-work page------*/
+/*-------the start of blog page------*/
+
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    grid-gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    padding: 0; 
+    padding-left: 4vw;
+    
+}
+.blog-content .row img {
+    max-width: 100%;
+    width: 600px;
+    height: 250px;
+}
+.blog-content .row img:hover {
+    opacity: 0.6;
+}
+.row{
+    padding: 0 0 30px 0;
+    background: #D9D9D9;
+    height: 380px;
+    width: 80%;
+}
+.row a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-weight: bold;
+}
+.row a:hover {
+    color: #FEA609;
+}
+/*-------the end of blog page------*/
+/*-------the start of contact-me page------*/
+
+.contact-me1{
+    display: flex;
+    margin-top: 80px;
+}
+
+.contact-me1 h4 {
+    padding-top: 50px;
+    font-size: 3vh;
+    padding-left: 1vw;
+}
+
+.cont1 i {
+    font-size: 5vh;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.cont input {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background: none;
+    margin: 0;
+    width: 250px;
+    padding: 3px;
+   
+}
+.cont label {
+    font-size: 2vh;
+}
+
+.cont {
+    height: auto;
+    border-radius: 50%;
+    width: auto;
+    margin-left: 40%;
+
+}
+.cont form {
+    padding: 60px;
+    padding-left: 50px;
+    padding-right: 70px;
+
+}
+h5 {
+    padding: 20px;
+}
+.send {
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    background: white;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    box-shadow: #000;
+    margin-top: 360px;
+    margin-left: 30px;
+}
+/* ----the login page---- */
+.form1 form {
+    padding: 50px;
+}
+
+.form1 label {
+    font-size: large;
+}
+.form1 button {
+    background: #FEA609;
+    margin-top:60px;
+    margin-left: 70%;
+    padding: 10px;
+    font-size: small;
+    border-radius: 10px;
+    border: none;
+
+}
+.arrow i{
+    background:white;
+    border-radius: 50%;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    font-size: xx-large;
+    color: black;
+    border: #000 solid;
+}
+.form1 {
+    background: rgba(217, 217, 217, 0.24);
+    height: auto;
+    width: auto;
+    /* margin: 100px 400px 400px 400px; */
+    border-radius: 30px;
+    margin: 30vh;
+    border-style: none;
+
+}
+.form1 input {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background: none;
+    border-bottom: #fff solid;
+    padding: 10px;
+    width: 40vw;
+
+   
+}
+.form1 label {
+
+    color: white;
+   
+}
+.form1 form {
+    padding: 50px;
+}
+
+.form1 label {
+    font-size: x-large;
+}
+.form1 button {
+    background: #FEA609;
+    margin-top:60px;
+    margin-left: 80%;
+    padding: 10px;
+    font-size: 2vh;
+    border-radius: 10px;
+    border: none;
+
+}
+.form1 button:hover {
+    opacity: 0.6;
+    color: #D9D9D9;
+}
+
+
+}
+
+
+
+
+
+
+/*----media Querry for header------*/
+@media only screen and (max-width:800px) {
+    section {
+    margin-left: 5%;
+    /* padding: 0; */
+    }
+    .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        display: none;
+        align-items:flex-start;
+        flex-direction: column;
+        margin-left: 40vw;
+        background: #D9D9D9;
+        /* opacity: 0.5; */
+       /* display: none;  */
+       height: 100vh;
+    }
+    .navbar.active{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items:flex-start;
+        flex-direction: column;
+        margin-left: 40vw;
+        background: #D9D9D9;
+        /* opacity: 0.5; */
+       /* display: none;  */
+       height: 100vh;
+    }
+    .navbar a {
+        padding: 0.5rem;
+        margin: 0;
+        border: none;
+        color:black;
+        opacity: 0.7;
+        font-weight: bold;
+    }
+    .nav-btn {
+        margin: 0;
+        padding-left: 30px;
+    }
+    .navbar a:hover {
+        color: #FEA609;
+    }
+    #menu-icon {
+        display: block;
+        margin-left: 70vw;
+        cursor: pointer;
+    }
+
+    #logo {
+        display: flex;
+    }
+    .home {
+        height: 100vh;
+        background-color: black;
+        background-image:url('now1.jpg');
+        background-repeat:no-repeat;
+        background-size: 80%;
+        background-position: center top 30px;
+    }
+    h1 {
+        font-size: 4vh;
+        padding-bottom:20px;
+        padding-left: 0;
+        margin-top: 45vh;
+    
+    }
+    .cv-btn button {
+        border-radius: 5px;
+        font-size: 20px;
+        background: #fff;
+        padding: 5px;
+        border: none;
+        
+    }
+    .cv-btn {
+    margin-left:20%;
+    padding-top: 3vh;
+       
+    }
+    h4 {
+        font-size: x-small;
+        line-height: 1;
+        font-size: 2vh;
+        font-weight: 25;
+        margin-left: 0px;
+    }
+    h2 {
+        padding-top: 5vh;
+    
+    }
+    .abt1 h4 {
+        /* font-size: small; */
+        line-height: 1;
+        font-size: 3vh;
+        font-weight: 25;
+        margin-left: -50px;
+    }
+    .abt{
+        display: block;    
+        margin-left: 0;
+    }
+    .abt1 {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    
+        padding: 40px;
+    }
+     .abt1 i {
+        
+        font-size: large;
+        padding: 5px;
+        padding-top: 40px;
+    }
+    .abt2 {
+        margin: 0;
+    
+        margin-left: 0;
+    }
+    .abt2 i {
+        font-size: large;
+        padding: 5px;
+    }
+    /*----the start of about-me------*/
+    /*-----the start of my-skills -------*/
+    .skill {
+        display: inline;
+        margin: 0;
+    }
+    .container-1{
+        display: none;
+    }
+    
+    .container-2{
+        display: none;
+      
+    }
+    .lan{
+        display: none;
+    }
+    h3 {
+        margin: 0;
+        padding: 20px;
+        background: #D9D9D9;
+        color:#000;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 5vh;
+    }
+    .skill2 {
+        margin-left: 0;
+    }
+     /*-------The start of my-work------*/
+
+     .my-work-content {
+        display: inline;
+        margin: 2vh;
+    }
+    .my-work-content .row img {
+        max-width: 100%;
+        width: 600px;
+        height: 15vh; 
+    }
+    .row{
+  
+        background: #D9D9D9;
+        width: auto;
+        height: auto;
+        margin-top: 5vh;
+        
+    }
+    .row a{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+    }
+    /*-----the end of my-work page---*/
+    /*------the start of blog--------*/
+    .blog-content {
+        display: inline;
+    }
+    .blog-content .row img {
+        max-width: 100%;
+        width: 600px;
+        height: 15vh;
+    }
+    .row{
+  
+        background: #D9D9D9;
+        width: auto;
+        height: auto;
+        margin-top: 5vh;
+        
+    }
+    .row a{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+
+
+    }
+    h6{
+        display: none;
+    }
+    /*------the end of blog----*/
+    /*-------the start of contact me-----*/
+    .contact-me1{
+        display: block;
+        margin-top: 80px;
+    }
+    
+    .contact-me1 h4 {
+        padding-top: 50px;
+        font-size: large;
+    }
+    
+    .cont1 i {
+        font-size: medium;
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+    
+    
+    .cont input {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        background: none;
+        margin: 0;
+        width: 250px;
+       
+    }
+    .cont label {
+        font-size: smaller;
+    }
+    
+    .cont {
+        height: auto;
+        border:none;
+        width: auto;
+        margin-left: 0;
+    
+    }
+    .cont form {
+        padding: 10px;    
+    }
+    h5 {
+        padding: 20px;
+    }
+    .send {
+        height: auto;
+        width: auto;
+        border-radius: 10px;
+        padding: 10px;
+        background: white;
+        color: black;
+        border-color: black;
+        border-style: solid;
+        box-shadow: #000;
+        margin-top: 10px;
+        margin-left: 0;
+    } 
+    .send br {
+        display: none;
+    }
+    /* ----the end of contact me page---- */
+    /* -----the start of login page---- */
+    .form1 {
+        background: rgba(217, 217, 217, 0.24);
+        height: auto;
+        width: auto;
+        margin: 20vh 5vw 400px 5vw;
+        border-radius: 30px;
+        border-style: none;
+    
+    }
+    .form1 input {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        background: none;
+        border-bottom: #fff solid;
+        padding: 10px;
+        width: 200px;
+    
+       
+    }
+    .form1 label {
+    
+        color: white;
+       
+    }
+    .form1 form {
+        padding: 50px;
+    }
+    
+    .form1 label {
+        font-size: large;
+    }
+    .form1 button {
+        background: #FEA609;
+        margin-top:60px;
+        margin-left: 70%;
+        padding: 10px;
+        font-size: small;
+        border-radius: 10px;
+        border: none;
+    
+    }
+
+
+}
+@media (max-width:400px) {
+    section {
+    margin-left: 5%;
+    }
+    .navbar{
+
+        display: none;
+    }
+    header {
+        width: 100%;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        position: fixed;
+        z-index: 4;
+        background: rgba(0,0,0, 0.6);
+        
+    }
+    .navbar.active{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items:flex-start;
+        flex-direction: column;
+        margin-left: 40vw;
+        background: #D9D9D9;
+        height: 60vh;
+        justify-content: space-around;
+    }
+    
+    .navbar a {
+        /* padding: 0.5rem; */
+        margin: 0;
+        border: none;
+        color:black;
+        /* opacity: 0.7; */
+        /* font-weight: bold; */
+        font-size: 4vh;
+    }
+    .nav-btn {
+        margin: 0;
+        padding-left: 30px;
+    }
+    .navbar a:hover {
+        color: #FEA609;
+    }
+    #menu-icon {
+        display: block;
+        margin-left: 70vw;
+        cursor: pointer;
+    }
+
+    #logo {
+        display: flex;
+    }
+    .home-text {
+        margin-left: 0;
+        margin-top:30vh;
+    }
+    .home {
+        height: 100vh;
+        background-color: black;
+        background-image:url('now1.jpg');
+        background-repeat:no-repeat;
+        background-size: 80%;
+        /* background-position: center top 30px; */
+    }
+    h1 {
+        font-size: 4vh;
+        padding-bottom:20px;
+        padding-left: 0;
+        /* margin-top: 45vh; */
+    
+    }
+    .cv-btn button {
+        border-radius: 5px;
+        font-size: 20px;
+        background: #fff;
+        padding: 5px;
+        border: none;
+        
+    }
+    .cv-btn {
+    margin-left:20%;
+    padding-top: 3vh;
+       
+    }
+    h4 {
+        font-size: 3vh;
+        line-height: 1;
+        font-size: 2.5vh;
+        font-weight: 25;
+        margin-left: 0px;
+    }
+    h2 {
+        margin: 5vh;
+    
+    }
+    .abt1 h4 {
+        /* font-size: small; */
+        line-height: 1;
+        font-size: 2.5vh;
+        font-weight: 25;
+        margin-left: -50px;
+    }
+    .abt{
+        display: block;    
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .abt1 {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+     .abt1 i {
+        
+        font-size: 4vh;
+        padding: 5px;
+        padding-top: 40px;
+    }
+    .abt2 {
+        margin: 0;
+    
+        margin-left: 0;
+        font-size: 3vh;
+    }
+    /*----the start of about-me------*/
+    /*-----the start of my-skills -------*/
+    .skill {
+        display: inline;
+        margin: 0;
+    }
+    .container-1{
+        display: none;
+    }
+    
+    .container-2{
+        display: none;
+      
+    }
+    .lan{
+        display: none;
+    }
+    h3 {
+        margin: 0;
+        padding: 20px;
+        background: #D9D9D9;
+        color:#000;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 5vh;
+    }
+     /*-------The start of my-work------*/
+
+     .my-work-content {
+        display: inline;
+        margin: 2vh;
+        /* height: fit-content; */
+    }
+    .my-work-content .row img {
+        max-width: 100%;
+        width: 600px;
+        height: 15vh; 
+    }
+    .row{
+  
+        background: #D9D9D9;
+        width: auto;
+        height: auto;
+        margin-top: 5vh;
+        
+    }
+    .row a{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+    }
+
+    /*-----the end of my-work page---*/
+    /*------the start of blog--------*/
+
+
+    /*------the end of blog----*/
+    /*-------the start of contact me-----*/
+    .contact-me1{
+        display: block;
+        margin-top: 80px;
+    }
+    
+    .contact-me1 h4 {
+        padding-top: 50px;
+        font-size: large;
+    }
+    
+    .cont1 i {
+        font-size: medium;
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+    
+    
+    .cont input {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        background: none;
+        margin: 0;
+        width: 250px;
+       
+    }
+    .cont label {
+        font-size: smaller;
+    }
+    
+    .cont {
+        height: auto;
+        border:none;
+        width: auto;
+        margin-left: 0;
+    
+    }
+    .cont form {
+        padding: 10px;    
+    }
+    h5 {
+        padding: 20px;
+    }
+    .send {
+        height: auto;
+        width: auto;
+        border-radius: 10px;
+        padding: 10px;
+        background: white;
+        color: black;
+        border-color: black;
+        border-style: solid;
+        box-shadow: #000;
+        margin-top: 10px;
+        margin-left: 0;
+    } 
+    .send br {
+        display: none;
+    }
+    /* ----the end of contact me page---- */
+    /* -----the start of login page---- */
+    .log-in h2 {
+        font-size: 3vh;
+        margin-top: 2vh;
+    }
+    .form1 {
+        background: rgba(217, 217, 217, 0.24);
+        height: auto;
+        width: auto;
+        margin: 20vh 5vw 400px 5vw;
+        border-radius: 30px;
+        border-style: none;
+    
+    }
+    .form1 input {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        background: none;
+        border-bottom: #fff solid;
+        padding: 10px;
+        width: 200px;
+    
+       
+    }
+    .form1 label {
+    
+        color: white;
+       
+    }
+    .form1 form {
+        padding: 50px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .form1 label {
+        font-size: large;
+    }
+    .form1 button {
+        background: #FEA609;
+        margin-top:2vh;
+        margin-bottom: 2vh;
+        margin-left: 70%;
+        padding: 10px;
+        font-size: small;
+        border-radius: 10px;
+        border: none;
+    
+    }
+
+
+}
+/*----media Querry for homepage------*/
+@media (max-width:350px) {
+    /* -----the about me page----- */
+    h2 {
+        font-size: 4vh;
+    }
+    .abt2 {
+        margin: 0;
+    
+        margin-left: 0;
+        font-size: 3vh;
+        padding-top: 0;
+    }
+
+    .abt1 h4 {
+        /* font-size: small; */
+        line-height: 1;
+        font-size: 2.5vh;
+        font-weight: 25;
+        margin-left: -15vw;
+    }
+    .abt{
+        display: block;    
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+     .abt1 i {
+        
+        font-size: 4vh;
+        padding: 0;
+        padding-top: 2vh;
+    }
+    .abt2 i {
+        padding-top: 1vh;
+
+    }
+    /* ------skills page----- */
+    h3 {
+        margin: 0;
+        padding: 3vh;
+        background: #D9D9D9;
+        color:#000;
+        text-align: center;
+        border-radius:1vh;
+        margin-top: 5vh;
+        font-size: 3vh;
+    }
+    /* ------My work page----- */
+    .my-work-content {
+        display: block;
+        margin: 2vh;
+        /* height: fit-content; */
+    }
+    .my-work-content .row img {
+        display: none;
+    }
+    .row{
+  
+        background: none;
+        width: auto;
+        height: auto;
+        margin-top: 0;
+        margin: 0;
+        padding: 2vh;
+        background: #D9D9D9;
+        color:#000;
+        text-align: center;
+        border-radius:2vh;
+        margin-top: 5vh;        
+    }
+    .row a{
+        font-size: 3vh;
+    }
+    /* -----blog page ------*/
+    .blog-content .row img {
+        display: none;
+    }
+}
+
+
+

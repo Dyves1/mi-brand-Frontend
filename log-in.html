@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portifolio</title>
+        <meta name="description" content="portifolio"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://kit.fontawesome.com/b71c1f0138.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        
+
+
+    </head>
+    <body>  
+        <!-- <div class="arrow"><i class="fa-solid fa-arrow-left"></i></div> -->
+        <button onclick="history.back()" class="arrow"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="log-in">
+            
+                <fieldset class="form1">
+                    <h2>Log in</h2>
+                    <form id="form2">
+                        
+                        <label for="email"> Email </label> <br>
+                        <input type="text" id="email" name=""> <br><br>
+                        <label for="Password"> Password </label> <br>
+                        <input type="text" id="password" name=""> <br><br>
+                        <button  type="submit" onclick="validate()" >Log in</button>
+                    </form>
+                    <div id="error"></div>
+
+                </fieldset> 
+            
+        </div>
+        <script defer src="log-in.js"></script>
+    </body>
+</html>
+
+
