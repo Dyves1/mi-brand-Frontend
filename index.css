@@ -10,7 +10,7 @@ body {
 color: white;
 font-family: 'Inter', sans-serif;
 background: rgba(0,0,0, 0.8);
-/* margin: 0; */
+
 }
 /*------ the start of header-----*/
 header {
@@ -112,8 +112,6 @@ section {
  h1 {
     font-size: 50px;
     padding-bottom:20px;
-    /* padding-left: 60px;
-    margin-top: 250px; */
 
 }
 
@@ -134,7 +132,6 @@ h4 {
     line-height: 1;
     font-size: 20px;
     font-weight: 50;
-    /* margin-left: 60px; */
 }
 /*------the end of homepage------*/
 /*-----About me page------*/
@@ -174,10 +171,8 @@ h2 {
 .abt2 {
     margin: 0;
     font-size: 4vh;
-    /* margin-left: 110px; */
 }
 .abt2 i {
-    /* font-size: xx-large; */
     padding: 10px;
 }
 
@@ -204,16 +199,12 @@ h2 {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    /* height: 100px; */
-
 
 }
 .container-1 div i {
     font-size: 10vh;
     background: #FEA609;
     padding: 10px;
-    /* height: 100px;
-    width: 100px; */
     text-align: center;
 }
 .container-2{
@@ -230,15 +221,14 @@ h2 {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    /* height: 100px; */
+
 
 }
 .container-2 div i {
     font-size: 3rem;
     background: #FEA609;
     padding: 10px;
-    /* height: 100px;
-    width: 100px; */
+
     text-align: center;
 }
 
@@ -316,7 +306,6 @@ h6{
 .row{
     padding: 0 0 30px 0;
     background: #D9D9D9;
-    /* height: 380px; */
     width: 80%;
 }
 .row a{
@@ -396,7 +385,6 @@ h5 {
 #error-message {
     background: red;
     font-size: 2vh;
-    /* padding: 10px; */
     text-align: center;
 }
 
@@ -461,6 +449,44 @@ h5 {
 }
 
 /*-------the end of login page------*/
+
+
+
+/* ----the start of dashboard page---- */
+.dashboard {
+    display: flex;
+    margin: 10vh;
+    background: rgba(217, 217, 217, 0.24);
+}
+.board-nav {
+    background: #000;
+    
+
+}
+.board-nav li {
+    list-style: none;
+ 
+}
+.board-nav a {
+    text-decoration: none;
+    color: #fff;
+
+}
+.logo i {
+    margin-left: 20vw;
+    padding-right: 2vh;
+}
+.logo {
+    margin-top: 5vh;
+    padding-bottom: 4vh;
+}
+.dashboard a:hover {
+    color: #FEA609;
+}
+/* .board-home {
+
+} */
+
 @media only screen and (max-width: 1200px) 
 /* and (min-width: 820px)  */
 {
