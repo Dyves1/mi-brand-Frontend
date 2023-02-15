@@ -457,24 +457,33 @@ h5 {
     display: flex;
     margin: 10vh;
     background: rgba(217, 217, 217, 0.24);
+    margin-top: 2vh;
+    border-radius: 3vh;
 }
 .board-nav {
     background: #000;
+    border-radius: 3vh;
     
 
 }
 .board-nav li {
     list-style: none;
+    padding-top: 2vh;
  
 }
 .board-nav a {
     text-decoration: none;
     color: #fff;
+    
 
 }
+.board-nav ul {
+    padding-left: 3vw;
+}
 .logo i {
-    margin-left: 20vw;
+    margin-left: 12vw;
     padding-right: 2vh;
+    font-size: 4vh;
 }
 .logo {
     margin-top: 5vh;
@@ -482,6 +491,13 @@ h5 {
 }
 .dashboard a:hover {
     color: #FEA609;
+}
+.board-btn {
+    margin-left: 14vw;
+    margin-bottom: 5vh;
+    /* margin-top: 30vh; */
+    padding: 1vh;
+    border-radius: 1vh;
 }
 /* .board-home {
 
