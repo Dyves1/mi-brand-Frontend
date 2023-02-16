@@ -133,18 +133,7 @@ margin-left:80%;
 margin-bottom: 2vh;
    
 }
-.subs button {
-    padding: 1vh;
-    border-radius: 1vh;
-    margin-left: 3vw;
-    margin-top: 2vh;
-    background: #FEA609;
-    font-size: 3vh;
-}
-.subs button:hover {
-    opacity:0.5;
-    color: #fff;
-}
+
 h4 {
     line-height: 1;
     font-size: 4vh;
@@ -347,13 +336,12 @@ h6{
     font-size: large;
     padding-left: 5vw;
 }
+/* .contact-me1 h2 {
+    padding-top:0;
+    font-size: large;
+    padding-left: 5vw;
+} */
 
-.cont1 i {
-    font-size: xx-large;
-    padding: 10px;
-    margin-bottom: 5vh;
-    padding-left: 3vw;
-}
 
 
 .cont input {
@@ -362,12 +350,12 @@ h6{
     border-top: none;
     background: none;
     margin: 0;
-    width: 20vw;
-    padding: 5px;
+    width: 15vw;
+    /* padding: 2px; */
    
 }
 .cont label {
-    font-size: smaller;
+    font-size: 2vh;
 }
 
 .cont {
@@ -375,10 +363,11 @@ h6{
     border-radius: 50%;
     width: auto;
     margin-left: 60%;
+    margin-top: -5vh;
 
 }
 .cont form {
-    padding: 60px;
+    padding: 40px;
     padding-left: 70px;
     padding-right: 70px;
 
@@ -396,8 +385,8 @@ h5 {
     border-color: black;
     border-style: solid;
     box-shadow: #000;
-    margin-top: 380px;
-    margin-left: 70px;
+    margin-top: 50vh;
+    margin-left: 7vw;
 }
 #error-message {
     background: red;
@@ -408,6 +397,42 @@ h5 {
 
 
 /*-----the end of contact-me page--------*/
+/*----the start of footer-------*/
+footer{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 0; */
+}
+.subs {
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+}
+.subs button {
+    padding: 1vh;
+    background: #FEA609;
+    font-size: 3vh;
+}
+.subs button:hover {
+    opacity:0.5;
+    color: #fff;
+}
+.subs input {
+    padding: 1vh;
+    font-size: 3vh;
+}
+.cont1 i {
+    font-size: xx-large;
+    padding: 10px;
+    margin-bottom: 5vh;
+    padding-left: 1vw;
+}
+.cont1{
+    margin-top: 3vh;
+}
+
+
 /*------the start of login page------*/
 .arrow i{
     border-radius: 50%;
