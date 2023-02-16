@@ -85,7 +85,7 @@ span {
     color: white;   
 }
 #menu-icon {
-    font-size: 26px;
+    font-size: 4vh;
     color: white;
     cursor: pointer;
     display: none;
@@ -111,7 +111,7 @@ section {
     margin-top: 40vh;
 }
  h1 {
-    font-size: 50px;
+    font-size: 5vh;
     padding-bottom:20px;
 
 }
@@ -130,6 +130,7 @@ section {
 }
 .cv-btn {
 margin-left:80%;
+margin-bottom: 2vh;
    
 }
 .subs button {
@@ -145,9 +146,8 @@ margin-left:80%;
     color: #fff;
 }
 h4 {
-    font-size: medium;
     line-height: 1;
-    font-size: 20px;
+    font-size: 4vh;
     font-weight: 50;
 }
 /*------the end of homepage------*/
@@ -156,13 +156,13 @@ h2 {
     color: #FEA609;
     text-align: center;
     padding-top: 80px;
+    font-size: 4vh;
 
 }
 
 .abt1 h4 {
-        font-size: medium;
         line-height: 1.5;
-        font-size: 20px;
+        font-size: 4vh;
         font-weight: 50;
     
 }
@@ -261,7 +261,7 @@ h3 {
     padding-left: 5vh;
 }
 .skill2 {
-    margin-left: 10vw;
+    margin-left: 30vw;
 }
 
 /*-----end of skills page*/
@@ -450,9 +450,9 @@ h5 {
 .form1 button {
     background: #FEA609;
     margin-top:20px;
-    margin-left: 80%;
+    margin-left: 70%;
     padding: 10px;
-    font-size: large;
+    font-size: 4vh;
     border-radius: 10px;
     border: none;
 
@@ -512,10 +512,17 @@ h5 {
     padding: 1vh;
     border-radius: 1vh;
 }
+@media only screen and (min-width: 1440px){
 
+
+    /* ----login page---- */
+ .form1{
+    margin-top: ;
+ }   
+}
+    
 
 @media only screen and (max-width: 1200px) 
-/* and (min-width: 820px)  */
 {
     section {
         padding-left:0 ;
@@ -548,46 +555,45 @@ h5 {
 
     .nav-btn {
         justify-content: space-between;
-        margin: 20px;
+        /* margin: 20px; */
         padding-left: 10vw;
         
     }
     .nav-btn a {
-        font-weight: 400px;
+        /* font-weight: 400px; */
         font-size: 2vw;
      }
-     h1 {
+     /* h1 {
         font-size: 50px;
         padding-bottom:20px;
         padding-left: 0;
         margin-top: 45vh;
     
-    }
+    } */
     .home-text {
         padding-left: 2vh;
     }
     
-    .cv-btn button {
+    /* .cv-btn button {
         border-radius: 10px;
         font-size: 20px;
         background: #fff;
         padding: 10px;
         border: none;
         
-    }
-    .cv-btn {
+    } */
+    /* .cv-btn {
     margin-left:80%;
        
-    }
-    h4 {
+    } */
+    /* h4 {
         font-size: medium;
         line-height: 1;
         font-size: 20px;
         font-weight: 50;
         margin-left: 0;
-    }
+    } */
     .abt1 h4 {
-        /* font-size: medium; */
         line-height: 1.5;
         font-size: 3vh;
         font-weight: 25;
@@ -602,8 +608,6 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    /* padding: 40px; */
 }
  .abt1 i {
     
@@ -626,7 +630,6 @@ h5 {
 .skill {
     display: flex;
     justify-content: space-around;
-    /* margin-left: 4vw; */
   
 } 
 .container-1{
@@ -645,9 +648,6 @@ h5 {
     justify-content: center;
     align-items: center;
     height: 100px;
-    /* border: #093efe solid; */
-
-
 }
 .container-1 div i {
     font-size: 5vh;
@@ -832,23 +832,23 @@ h5 {
 }
 /* ----the login page---- */
 .form1 form {
-    padding: 50px;
+    padding: 5vh;
 }
 
 .form1 label {
-    font-size: large;
+    font-size: 3vh;
 }
-.form1 button {
+/* .form1 button {
     background: #FEA609;
     margin-top:60px;
-    margin-left: 70%;
+    margin-left: 40%;
     padding: 10px;
     font-size: small;
     border-radius: 10px;
     border: none;
 
-}
-.arrow i{
+} */
+/* .arrow i{
     background:white;
     border-radius: 50%;
     margin-top: 5vh;
@@ -856,17 +856,18 @@ h5 {
     font-size: xx-large;
     color: black;
     border: #000 solid;
-}
+} */
 .form1 {
     background: rgba(217, 217, 217, 0.24);
     height: auto;
     width: auto;
     border-radius: 30px;
-    margin: 30vh;
+    margin-left:25vw ;
+    margin-right: 25vw;
     border-style: none;
 
 }
-.form1 input {
+/* .form1 input {
     border-right: none;
     border-left: none;
     border-top: none;
@@ -876,32 +877,38 @@ h5 {
     width: 40vw;
 
    
-}
-.form1 label {
+} */
+/* .form1 label {
 
     color: white;
    
-}
-.form1 form {
-    padding: 50px;
-}
+} */
+/* .form1  {
+
+    background: rgba(217, 217, 217, 0.24);
+    height: auto;
+    width: auto;
+    margin: 1vh 10vh 10vh 3vh;
+    border-radius: 30px;
+    border-style: none;
+} */
 
 .form1 label {
-    font-size: x-large;
+    font-size: 3vh;
 }
 .form1 button {
-    background: #FEA609;
+    background:#FEA609;
     margin-top:60px;
-    margin-left: 80%;
+    margin-left: 70%;
     padding: 10px;
-    font-size: 2vh;
+    font-size: 3vh;
     border-radius: 10px;
     border: none;
 
 }
 .form1 button:hover {
     opacity: 0.6;
-    color: #D9D9D9;
+    /* color: #D9D9D9; */
 }
 
 
@@ -923,7 +930,9 @@ h5 {
         margin-left: 40vw;
         background: #D9D9D9;
         height: 100vh;
-       /* font-size: 3vh; */
+    }
+    .navbar {
+        display: none;
     }
     .navbar a {
         padding: 0.5rem;
@@ -932,7 +941,6 @@ h5 {
         color:black;
         opacity: 0.7;
         font-weight: bold;
-        /* font-size: 3vh; */
     }
     .nav-btn {
         margin: 0;
@@ -968,24 +976,23 @@ h5 {
     }
     .cv-btn button {
         border-radius: 5px;
-        font-size: 20px;
+        font-size: 2.5vh;
         background: #fff;
-        padding: 5px;
+        padding: 1vh;
         border: none;
         
     }
     .cv-btn {
-    margin-left:55%;
-    padding-top: 3vh;
+    margin-left:70%;
+     padding-top: 3vh;} 
        
-    }
-    h4 {
-        font-size: x-small;
+    
+     h4 {
         line-height: 1;
-        font-size: 2vh;
+        font-size: 2.5vh;
         font-weight: 25;
         margin-left: 0px;
-    }
+    } 
     h2 {
         padding-top: 5vh;
     
@@ -1009,7 +1016,7 @@ h5 {
     }
      .abt1 i {
         
-        font-size: large;
+        font-size: 4vh;
         padding: 5px;
         padding-top: 40px;
     }
@@ -1019,7 +1026,7 @@ h5 {
         margin-left: 0;
     }
     .abt2 i {
-        font-size: large;
+        font-size: 3vh;
         padding: 5px;
     }
     /*----the start of about-me------*/
@@ -1054,17 +1061,17 @@ h5 {
      /*-------The start of my-work------*/
 
      .my-work-content {
-        display: inline;
+        display: block;
         margin: 2vh;
     }
     .my-work-content .row img {
         max-width: 100%;
-        width: 600px;
-        height: 15vh; 
+        width: 100vw;
+        height: 16vh; 
     }
     .row{
   
-        background: #D9D9D9;
+        /* background: #D9D9D9; */
         width: auto;
         height: auto;
         margin-top: 5vh;
@@ -1078,11 +1085,11 @@ h5 {
     /*-----the end of my-work page---*/
     /*------the start of blog--------*/
     .blog-content {
-        display: inline;
+        display: block;
     }
     .blog-content .row img {
         max-width: 100%;
-        width: 600px;
+        width: 100vw;
         height: 15vh;
     }
     .row{
@@ -1110,11 +1117,11 @@ h5 {
     
     .contact-me1 h4 {
         padding-top: 50px;
-        font-size: large;
+        font-size: 3vh;
     }
     
     .cont1 i {
-        font-size: medium;
+        font-size: 3vh;
         padding: 10px;
         margin-bottom: 0px;
     }
@@ -1126,11 +1133,11 @@ h5 {
         border-top: none;
         background: none;
         margin: 0;
-        width: 250px;
+        width: 60vw;
        
     }
     .cont label {
-        font-size: smaller;
+        font-size: 3vh;
     }
     
     .cont {
@@ -1145,6 +1152,7 @@ h5 {
     }
     h5 {
         padding: 20px;
+        font-size: 3vh;
     }
     .send {
         height: auto;
@@ -1158,6 +1166,7 @@ h5 {
         box-shadow: #000;
         margin-top: 10px;
         margin-left: 0;
+        font-size: 2.5vh;
     } 
     .send br {
         display: none;
@@ -1165,15 +1174,16 @@ h5 {
     /* ----the end of contact me page---- */
     /* -----the start of login page---- */
     .form1 {
-        background: rgba(217, 217, 217, 0.24);
+        /* background: rgba(217, 217, 217, 0.24);
         height: auto;
-        width: auto;
-        margin: 20vh 5vw 400px 5vw;
+        width: auto; */
+        margin-left: 25vw;
+        margin-right: 25vw;
         border-radius: 30px;
-        border-style: none;
+        /* border-style: none; */
     
     }
-    .form1 input {
+    /* .form1 input {
         border-right: none;
         border-left: none;
         border-top: none;
@@ -1183,25 +1193,25 @@ h5 {
         width: 200px;
     
        
-    }
+    } */
     .form1 label {
     
         color: white;
        
     }
-    .form1 form {
+    /* .form1 form {
         padding: 50px;
-    }
+    } */
     
     .form1 label {
-        font-size: large;
+        font-size: 2vh;
     }
     .form1 button {
         background: #FEA609;
         margin-top:60px;
-        margin-left: 70%;
+        margin-left: 65%;
         padding: 10px;
-        font-size: small;
+        font-size: 2vh;
         border-radius: 10px;
         border: none;
     
@@ -1230,16 +1240,18 @@ h5 {
         margin-top: 45vh;
     
     }
-    .cv-btn button {
+     .cv-btn button {
         border-radius: 5px;
-        font-size: 20px;
+        font-size: 3vh;
         background: #fff;
         padding: 5px;
         border: none;
+        /* margin-left: 60%; */
         
-    }
+    } 
     .cv-btn {
     padding-top: 0;
+    margin-left: 50%;
        
     }
     h4 {
