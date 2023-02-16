@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 html {
     scroll-behavior: smooth;
 }
 body {
 color: white;
-font-family: 'Inter', sans-serif;
+font-family: 'verdana', sans-serif;
 background: rgba(0,0,0, 0.8);
 
 }
@@ -123,9 +124,25 @@ section {
     border: none;
     
 }
+.cv-btn button:hover{
+    background: #FEA609;
+    opacity: 0.4;
+}
 .cv-btn {
 margin-left:80%;
    
+}
+.subs button {
+    padding: 1vh;
+    border-radius: 1vh;
+    margin-left: 3vw;
+    margin-top: 2vh;
+    background: #FEA609;
+    font-size: 3vh;
+}
+.subs button:hover {
+    opacity:0.5;
+    color: #fff;
 }
 h4 {
     font-size: medium;
@@ -393,10 +410,7 @@ h5 {
 /*-----the end of contact-me page--------*/
 /*------the start of login page------*/
 .arrow i{
-    background:white;
     border-radius: 50%;
-    margin-top: 5vh;
-    margin-left: 3vw;
     font-size: xx-large;
     color: black;
     border: #000 solid;
@@ -405,7 +419,7 @@ h5 {
     background: rgba(217, 217, 217, 0.24);
     height: auto;
     width: auto;
-    margin: 100px 400px 400px 400px;
+    margin: 40px 400px 40px 400px;
     border-radius: 30px;
     border-style: none;
 
@@ -435,7 +449,7 @@ h5 {
 }
 .form1 button {
     background: #FEA609;
-    margin-top:60px;
+    margin-top:20px;
     margin-left: 80%;
     padding: 10px;
     font-size: large;
@@ -495,13 +509,10 @@ h5 {
 .board-btn {
     margin-left: 14vw;
     margin-bottom: 5vh;
-    /* margin-top: 30vh; */
     padding: 1vh;
     border-radius: 1vh;
 }
-/* .board-home {
 
-} */
 
 @media only screen and (max-width: 1200px) 
 /* and (min-width: 820px)  */
@@ -584,8 +595,6 @@ h5 {
 }
 .abt{
     display: flex;
-    /* align-items: flex-start; */
-    /* margin-top: 50px; */
     margin-left: 0;
     padding-left: 0;
 }
@@ -852,7 +861,6 @@ h5 {
     background: rgba(217, 217, 217, 0.24);
     height: auto;
     width: auto;
-    /* margin: 100px 400px 400px 400px; */
     border-radius: 30px;
     margin: 30vh;
     border-style: none;
@@ -899,30 +907,10 @@ h5 {
 
 }
 
-
-
-
-
-
 /*----media Querry for header------*/
 @media only screen and (max-width:800px) {
     section {
     margin-left: 5%;
-    /* padding: 0; */
-    }
-    .navbar{
-        position: absolute;
-        top:100%;
-        left: 0;
-        right: 0;
-        display: none;
-        align-items:flex-start;
-        flex-direction: column;
-        margin-left: 40vw;
-        background: #D9D9D9;
-        /* opacity: 0.5; */
-       /* display: none;  */
-       height: 100vh;
     }
     .navbar.active{
         position: absolute;
@@ -934,9 +922,8 @@ h5 {
         flex-direction: column;
         margin-left: 40vw;
         background: #D9D9D9;
-        /* opacity: 0.5; */
-       /* display: none;  */
-       height: 100vh;
+        height: 100vh;
+       /* font-size: 3vh; */
     }
     .navbar a {
         padding: 0.5rem;
@@ -945,6 +932,7 @@ h5 {
         color:black;
         opacity: 0.7;
         font-weight: bold;
+        /* font-size: 3vh; */
     }
     .nav-btn {
         margin: 0;
@@ -967,6 +955,7 @@ h5 {
         background-color: black;
         background-image:url('now1.jpg');
         background-repeat:no-repeat;
+        margin-left: -5vw;
         background-size: 80%;
         background-position: center top 30px;
     }
@@ -986,7 +975,7 @@ h5 {
         
     }
     .cv-btn {
-    margin-left:20%;
+    margin-left:55%;
     padding-top: 3vh;
        
     }
@@ -1002,7 +991,6 @@ h5 {
     
     }
     .abt1 h4 {
-        /* font-size: small; */
         line-height: 1;
         font-size: 3vh;
         font-weight: 25;
@@ -1109,8 +1097,6 @@ h5 {
         text-decoration: none;
         color: black;
         font-size: large;
-
-
     }
     h6{
         display: none;
@@ -1231,75 +1217,17 @@ h5 {
 
         display: none;
     }
-    header {
-        width: 100%;
-        right: 0;
-        top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px;
-        position: fixed;
-        z-index: 4;
-        background: rgba(0,0,0, 0.6);
-        
-    }
-    .navbar.active{
-        position: absolute;
-        top:100%;
-        left: 0;
-        right: 0;
-        display: flex;
-        align-items:flex-start;
-        flex-direction: column;
-        margin-left: 40vw;
-        background: #D9D9D9;
-        height: 60vh;
-        justify-content: space-around;
-    }
-    
     .navbar a {
-        /* padding: 0.5rem; */
         margin: 0;
         border: none;
         color:black;
-        /* opacity: 0.7; */
-        /* font-weight: bold; */
-        font-size: 4vh;
+        font-size: 3vh;
     }
-    .nav-btn {
-        margin: 0;
-        padding-left: 30px;
-    }
-    .navbar a:hover {
-        color: #FEA609;
-    }
-    #menu-icon {
-        display: block;
-        margin-left: 70vw;
-        cursor: pointer;
-    }
-
-    #logo {
-        display: flex;
-    }
-    .home-text {
-        margin-left: 0;
-        margin-top:30vh;
-    }
-    .home {
-        height: 100vh;
-        background-color: black;
-        background-image:url('now1.jpg');
-        background-repeat:no-repeat;
-        background-size: 80%;
-        /* background-position: center top 30px; */
-    }
-    h1 {
+     h1 {
         font-size: 4vh;
         padding-bottom:20px;
         padding-left: 0;
-        /* margin-top: 45vh; */
+        margin-top: 45vh;
     
     }
     .cv-btn button {
@@ -1311,8 +1239,7 @@ h5 {
         
     }
     .cv-btn {
-    margin-left:20%;
-    padding-top: 3vh;
+    padding-top: 0;
        
     }
     h4 {
@@ -1322,210 +1249,34 @@ h5 {
         font-weight: 25;
         margin-left: 0px;
     }
-    h2 {
-        margin: 5vh;
-    
-    }
     .abt1 h4 {
-        /* font-size: small; */
-        line-height: 1;
         font-size: 2.5vh;
-        font-weight: 25;
-        margin-left: -50px;
     }
     .abt{
-        display: block;    
-        margin-left: 0;
         margin-top: 0;
     }
     .abt1 {
-        display: block;
-        flex-direction: column;
-        align-items: center;
         padding-top: 0;
-    }
-     .abt1 i {
-        
-        font-size: 4vh;
-        padding: 5px;
-        padding-top: 40px;
     }
     .abt2 {
         margin: 0;
     
         margin-left: 0;
-        font-size: 3vh;
+        font-size: 2.4vh;
     }
     /*----the start of about-me------*/
     /*-----the start of my-skills -------*/
-    .skill {
-        display: inline;
-        margin: 0;
-    }
-    .container-1{
-        display: none;
-    }
-    
-    .container-2{
-        display: none;
-      
-    }
-    .lan{
-        display: none;
-    }
-    h3 {
-        margin: 0;
-        padding: 20px;
-        background: #D9D9D9;
-        color:#000;
-        text-align: center;
-        border-radius: 10px;
-        margin-top: 5vh;
-    }
-     /*-------The start of my-work------*/
 
-     .my-work-content {
-        display: inline;
-        margin: 2vh;
-        /* height: fit-content; */
-    }
-    .my-work-content .row img {
-        max-width: 100%;
-        width: 600px;
-        height: 15vh; 
-    }
-    .row{
-  
-        background: #D9D9D9;
-        width: auto;
-        height: auto;
-        margin-top: 5vh;
-        
-    }
-    .row a{
-        text-decoration: none;
-        color: black;
-        font-size: large;
-    }
-
-    /*-----the end of my-work page---*/
-    /*------the start of blog--------*/
-
-
-    /*------the end of blog----*/
-    /*-------the start of contact me-----*/
-    .contact-me1{
-        display: block;
-        margin-top: 80px;
-    }
-    
-    .contact-me1 h4 {
-        padding-top: 50px;
-        font-size: large;
-    }
-    
-    .cont1 i {
-        font-size: medium;
-        padding: 10px;
-        margin-bottom: 0px;
-    }
-    
-    
-    .cont input {
-        border-right: none;
-        border-left: none;
-        border-top: none;
-        background: none;
-        margin: 0;
-        width: 250px;
-       
-    }
-    .cont label {
-        font-size: smaller;
-    }
-    
-    .cont {
-        height: auto;
-        border:none;
-        width: auto;
-        margin-left: 0;
-    
-    }
-    .cont form {
-        padding: 10px;    
-    }
-    h5 {
-        padding: 20px;
-    }
-    .send {
-        height: auto;
-        width: auto;
-        border-radius: 10px;
-        padding: 10px;
-        background: white;
-        color: black;
-        border-color: black;
-        border-style: solid;
-        box-shadow: #000;
-        margin-top: 10px;
-        margin-left: 0;
-    } 
-    .send br {
-        display: none;
-    }
     /* ----the end of contact me page---- */
     /* -----the start of login page---- */
     .log-in h2 {
         font-size: 3vh;
         margin-top: 2vh;
     }
-    .form1 {
-        background: rgba(217, 217, 217, 0.24);
-        height: auto;
-        width: auto;
-        margin: 20vh 5vw 400px 5vw;
-        border-radius: 30px;
-        border-style: none;
-    
-    }
-    .form1 input {
-        border-right: none;
-        border-left: none;
-        border-top: none;
-        background: none;
-        border-bottom: #fff solid;
-        padding: 10px;
-        width: 200px;
-    
-       
-    }
-    .form1 label {
-    
-        color: white;
-       
-    }
     .form1 form {
-        padding: 50px;
         padding-top: 0;
         padding-bottom: 0;
     }
-    
-    .form1 label {
-        font-size: large;
-    }
-    .form1 button {
-        background: #FEA609;
-        margin-top:2vh;
-        margin-bottom: 2vh;
-        margin-left: 70%;
-        padding: 10px;
-        font-size: small;
-        border-radius: 10px;
-        border: none;
-    
-    }
-
-
 }
 /*----media Querry for homepage------*/
 @media (max-width:350px) {
@@ -1533,6 +1284,9 @@ h5 {
     h2 {
         font-size: 4vh;
     }
+    #menu-icon {
+        margin-left: 65vw;
+    }
     .abt2 {
         margin: 0;
     
@@ -1542,7 +1296,6 @@ h5 {
     }
 
     .abt1 h4 {
-        /* font-size: small; */
         line-height: 1;
         font-size: 2.5vh;
         font-weight: 25;

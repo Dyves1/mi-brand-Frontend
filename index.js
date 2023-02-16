@@ -8,6 +8,7 @@ function validation() {
    const email= document.getElementById('email').value;
    const message= document.getElementById('message').value;
    const error_message =document.getElementById('error-message');
+   const send=document.getElementById('send')
 
    let  text;
    
@@ -30,9 +31,7 @@ function validation() {
    else{
    alert('Message submitted successfully!')
    return }
-
-
-
-
 }
-// console.log('hiiiiii')
+send.onclick= validation
+
+
