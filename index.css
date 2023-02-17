@@ -133,6 +133,10 @@ margin-left:80%;
 margin-bottom: 2vh;
    
 }
+.cv-btn a{
+    text-decoration: none;
+    color: #000;
+}
 
 h4 {
     line-height: 1;
@@ -150,9 +154,8 @@ h2 {
 }
 
 .abt1 h4 {
-        line-height: 1.5;
+        /* line-height: 1.5; */
         font-size: 4vh;
-        font-weight: 50;
     
 }
 .abt{
@@ -165,8 +168,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding: 5vw;
+
 }
  .abt1 i {
     
@@ -177,9 +180,25 @@ h2 {
 .abt2 {
     margin: 0;
     font-size: 4vh;
+    margin-top: 10vh;
 }
 .abt2 i {
     padding: 10px;
+}
+.project {
+    background: #FEA609;
+    font-size: 3vh;
+    padding: 1vh;
+    margin-left: 30vw;
+    margin-top: 0;
+}
+.project a {
+    text-decoration: none;
+    color: #000;
+}
+.project:hover {
+    opacity: 0.7;
+    color: #fff;
 }
 
 /*--------the start of Skills page---------*/
@@ -332,7 +351,7 @@ h6{
 }
 
 .contact-me1 h4 {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     font-size: large;
     padding-left: 5vw;
 }
@@ -367,17 +386,16 @@ h6{
 
 }
 .cont form {
-    padding: 40px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 5vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
 
 }
 h5 {
     padding: 20px;
 }
 .send {
-    height: 80px;
-    width: 100px;
+
     border-radius: 50%;
     padding: 20px;
     background: white;
@@ -385,8 +403,8 @@ h5 {
     border-color: black;
     border-style: solid;
     box-shadow: #000;
-    margin-top: 50vh;
-    margin-left: 7vw;
+    margin-top: 47vh;
+    margin-left: 8vw;
 }
 #error-message {
     background: red;
@@ -422,9 +440,12 @@ footer{
     padding: 1vh;
     font-size: 3vh;
 }
+.subs h3 {
+    text-align: start;
+}
 .cont1 i {
-    font-size: xx-large;
-    padding: 10px;
+    font-size: 5vh;
+    /* padding: 10px; */
     margin-bottom: 5vh;
     padding-left: 1vw;
 }
@@ -649,8 +670,10 @@ footer{
 }
 
 /*--------the start of Skills page---------*/
-
-.skill {
+.skill2 {
+    margin-left: 5vw;
+}
+/* .skill {
     display: flex;
     justify-content: space-around;
   
@@ -718,7 +741,7 @@ h3 {
 .lan{
     padding-left: 5vh;
     font-size: 3vh;
-}
+} */
 /* -----the start of my work----- */
 .my-work-content {
     display: grid;
@@ -746,7 +769,7 @@ h3 {
     text-decoration: none;
     color: black;
     padding: 30px;
-    font-weight: bold;
+    font-weight: medium;
     font-size: 2vh;
 }
 h6{
@@ -794,7 +817,7 @@ h6{
 /*-------the end of blog page------*/
 /*-------the start of contact-me page------*/
 
-.contact-me1{
+/* .contact-me1{
     display: flex;
     margin-top: 80px;
 }
@@ -809,8 +832,8 @@ h6{
     font-size: 5vh;
     padding: 10px;
     margin-bottom: 50px;
-}
-.cont input {
+} */
+/* .cont input {
     border-right: none;
     border-left: none;
     border-top: none;
@@ -819,28 +842,28 @@ h6{
     width: 250px;
     padding: 3px;
    
-}
-.cont label {
+} */
+/* .cont label {
     font-size: 2vh;
-}
+} */
 
-.cont {
+/* .cont {
     height: auto;
     border-radius: 50%;
     width: auto;
     margin-left: 40%;
 
-}
-.cont form {
-    padding: 60px;
-    padding-left: 50px;
-    padding-right: 70px;
+} */
+/* .cont form {
+    padding: 10vh; */
+    /* padding-left: 50px;
+    padding-right: 70px; */
 
-}
-h5 {
+/* } */
+/* h5 {
     padding: 20px;
-}
-.send {
+} */
+/* .send {
     height: 80px;
     width: 100px;
     border-radius: 50%;
@@ -851,8 +874,8 @@ h5 {
     border-style: solid;
     box-shadow: #000;
     margin-top: 360px;
-    margin-left: 30px;
-}
+    margin-left: 10vw;
+} */
 /* ----the login page---- */
 .form1 form {
     padding: 5vh;
@@ -1016,6 +1039,10 @@ h5 {
         font-weight: 25;
         margin-left: 0px;
     } 
+    .home-text {
+        margin-left: 8vw;
+    }
+    /* ----The start of about me page------ */
     h2 {
         padding-top: 5vh;
     
@@ -1028,13 +1055,12 @@ h5 {
     }
     .abt{
         display: block;    
-        margin-left: 0;
+        margin-left: 5vw;
     }
     .abt1 {
         display: block;
         flex-direction: column;
         align-items: center;
-    
         padding: 40px;
     }
      .abt1 i {
@@ -1045,7 +1071,6 @@ h5 {
     }
     .abt2 {
         margin: 0;
-    
         margin-left: 0;
     }
     .abt2 i {
@@ -1056,7 +1081,7 @@ h5 {
     /*-----the start of my-skills -------*/
     .skill {
         display: inline;
-        margin: 0;
+        margin: 5vw;
     }
     .container-1{
         display: none;
@@ -1070,7 +1095,7 @@ h5 {
         display: none;
     }
     h3 {
-        margin: 0;
+        margin: 5vw;
         padding: 20px;
         background: #D9D9D9;
         color:#000;
@@ -1084,10 +1109,10 @@ h5 {
      /*-------The start of my-work------*/
 
      .my-work-content {
-        display: block;
+        /* display: inline; */
         margin: 2vh;
     }
-    .my-work-content .row img {
+    /* .my-work-content .row img {
         max-width: 100%;
         width: 100vw;
         height: 16vh; 
@@ -1095,47 +1120,48 @@ h5 {
     .row{
   
         /* background: #D9D9D9; */
-        width: auto;
+        /* width: auto;
         height: auto;
         margin-top: 5vh;
         
-    }
-    .row a{
+    }*/
+    /* .row a{
         text-decoration: none;
         color: black;
         font-size: large;
-    }
+    }   */
     /*-----the end of my-work page---*/
     /*------the start of blog--------*/
-    .blog-content {
+    /* .blog-content {
         display: block;
     }
     .blog-content .row img {
         max-width: 100%;
         width: 100vw;
         height: 15vh;
-    }
+    } */
     .row{
   
         background: #D9D9D9;
-        width: auto;
-        height: auto;
+        /* width: auto; */
+        /* height: auto; */
         margin-top: 5vh;
         
     }
     .row a{
-        text-decoration: none;
-        color: black;
-        font-size: large;
+        /* text-decoration: none;
+        color: black; */
+        font-size: 2vw;
+        padding-left: 1vh;
     }
     h6{
         display: none;
-    }
+    } 
     /*------the end of blog----*/
     /*-------the start of contact me-----*/
     .contact-me1{
         display: block;
-        margin-top: 80px;
+        margin-top: 0;
     }
     
     .contact-me1 h4 {
@@ -1167,7 +1193,8 @@ h5 {
         height: auto;
         border:none;
         width: auto;
-        margin-left: 0;
+        margin-left: 2vw;
+        margin-top: 0;
     
     }
     .cont form {
@@ -1188,7 +1215,7 @@ h5 {
         border-style: solid;
         box-shadow: #000;
         margin-top: 10px;
-        margin-left: 0;
+        margin-left: 2vw;
         font-size: 2.5vh;
     } 
     .send br {
@@ -1239,6 +1266,25 @@ h5 {
         border: none;
     
     }
+    /* -----the start of footer-------- */
+    footer {
+        display: block;
+    }
+     footer h3 {
+        margin: 0;
+        padding: 3vh;
+        background: none;
+        color:white;
+        text-align: center;
+        border-radius:1vh;
+        margin-top: 5vh;
+        font-size: 3vh;
+    }
+    .res {
+        margin-left: 2vw;
+        padding-bottom: 2vh;
+    }
+
 
 
 }
@@ -1263,6 +1309,9 @@ h5 {
         margin-top: 45vh;
     
     }
+    /* h2 {
+        padding-bottom: 4vh;
+    } */
      .cv-btn button {
         border-radius: 5px;
         font-size: 3vh;
@@ -1281,14 +1330,14 @@ h5 {
         font-size: 3vh;
         line-height: 1;
         font-size: 2.5vh;
-        font-weight: 25;
+        /* font-weight: 25; */
         margin-left: 0px;
     }
     .abt1 h4 {
         font-size: 2.5vh;
     }
     .abt{
-        margin-top: 0;
+        margin-top: 5vh;
     }
     .abt1 {
         padding-top: 0;
@@ -1312,6 +1361,37 @@ h5 {
         padding-top: 0;
         padding-bottom: 0;
     }
+    /* ---the start of footer------- */
+    .subs {
+        margin-left: 5vw;
+        margin-bottom: 2vh;
+    }
+    .subs button {
+        padding: 1vh;
+        background: #FEA609;
+        font-size: 2vh;
+    }
+    .subs button:hover {
+        opacity:0.5;
+        color: #fff;
+    }
+    .subs input {
+        padding: 1vh;
+        font-size: 2vh;
+    }
+    .cont1 i {
+        font-size: xx-large;
+        padding: 10px;
+        margin-bottom: 2vh;
+        padding-left: 1vw;
+    }
+    .cont1{
+        margin-top: 3vh;
+    }
+    /* h2 {
+        margin-bottom: ;
+    } */
+    
 }
 /*----media Querry for homepage------*/
 @media (max-width:350px) {
@@ -1322,24 +1402,24 @@ h5 {
     #menu-icon {
         margin-left: 65vw;
     }
-    .abt2 {
+    /* .abt2 {
         margin: 0;
     
         margin-left: 0;
         font-size: 3vh;
         padding-top: 0;
-    }
+    } */
 
-    .abt1 h4 {
+    /* .abt1 h4 {
         line-height: 1;
         font-size: 2.5vh;
         font-weight: 25;
         margin-left: -15vw;
-    }
+    } */
     .abt{
         display: block;    
-        margin-left: 0;
-        margin-top: 0;
+        /* margin-left: 0;
+        margin-top: 0; */
     }
 
      .abt1 i {
@@ -1351,6 +1431,9 @@ h5 {
     .abt2 i {
         padding-top: 1vh;
 
+    }
+    .abt2 {
+        font-size: 2.5vh;
     }
     /* ------skills page----- */
     h3 {
@@ -1393,6 +1476,10 @@ h5 {
     .blog-content .row img {
         display: none;
     }
+    .contact-me1 {
+        margin-top: 0;
+    }
+
 }
 
 
