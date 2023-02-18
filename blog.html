@@ -18,31 +18,96 @@
                 <a href="#" class="logo-text">I<span>D</span>Y</a>
                 <a href="#"><i class="fa-solid fa-bell"></i></a>
             </div>
-
             <ul>
                 <li><a href="dashboard.html">Dashboard</a> </li>
                 <li><a href="#"><i class="fa-solid fa-blog"></i>Blogs</a> </li>
                 <li><a href="#board-users"><i class="fa-solid fa-user"></i>users</a> </li>
                 <li><a href="#board-comments"><i class="fa-solid fa-comment"></i>comments</a> </li>
                 <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a> </li>
+                <button class="board-btn"><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i>logout</a> </button>
             </ul>
-            <button class="board-btn"><i class="fa-solid fa-right-from-bracket"></i>logout</button>
-
         </div>
         <div class="board-home">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="srch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="search here" title="Enter what you want to search">
+                <button>search</button>
+            </div>
             <!-- the blog page -->
-            <section class="board-blog">
-                <div>All blogs</div>
-                <div>Add blog</div>
-                <div>All works</div>
-                <div>Add Work</div>
-                <div>All skills</div>
-                <div>Add skills</div>
-            </section>
+            <div class="board-blog">
+                <h1>blogs</h1>
+                <div class="blog-add">
+                    
+                    <div >
+                        
+                        <h2>All Blogs</h2>
+                        <div>
+                            <ul>
+                                <li>Image</li>
+                                <li>Title</li>
+                                <li>description</li>
+                            </ul>
+                            <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        </div>                      
+    
+                    </div>
+                    <div>
+                        <h2>Add blog</h2>
+                        <label for="title">Title:</label><br>
+                        <input type="text" id="title" name=""><br>
+                        <label for="title">description:</label><br>
+                        <!-- <input type="text" id="description" name=""><br>
+                        <button class="choose">choose file</button><br>
+                        <button class="smt">Submit</button> -->
+                        <textarea rows="10" cols="50"id="description"></textarea></br>
+                        <label for="myfile">Select files:</label>
+                        <input type="file" id="myfile" name="myfile" multiple><br><br>
+                        <input class="smt" type="submit" value="Add" title="click here to submit"> </br>
+                       
+    
+                    </div>
+                </div>
+                <h1>Works</h1>
+                <div class="work-add">
+                    
+                    <div>
+                        
+                        <h2>All Works</h2>
+                        <div>
+                            <ul>
+                                <li>Image</li>
+                                <li>Title</li>
+                                <li>description</li>
+                            </ul>
+                            <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                        </div> 
+                       
+    
+                    </div>
+                    <div>
+                        
+                        <h2>Add Work</h2>
+                        <label for="title">Title:</label><br>
+                        <input type="text" id="title" name=""><br>
+                        <label for="title">description:</label><br>
+                        <!-- <input type="text" id="description" name=""><br>
+                        <button class="choose">choose file</button><br>
+                        <button class="smt">Submit</button> -->
+                        <textarea rows="10" cols="50" id="description"></textarea></br>
+                        <label for="myfile">Select files:</label>
+                        <input type="file" id="myfile" name="myfile" multiple><br><br>
+                        <input class="smt" type="submit" value="Add" title="click here to submit"> </br>
+                       
+    
+                    </div>
+                
+                </div>
+            </div>
 
         </div>
     </div>
-    
+    <script src="blog.js"></script>
 </body>
 </html>

@@ -137,12 +137,6 @@ margin-bottom: 2vh;
     text-decoration: none;
     color: #000;
 }
-
-h4 {
-    line-height: 1;
-    font-size: 4vh;
-    font-weight: 50;
-}
 /*------the end of homepage------*/
 /*-----About me page------*/
 h2 {
@@ -151,12 +145,6 @@ h2 {
     padding-top: 80px;
     font-size: 4vh;
 
-}
-
-.abt1 h4 {
-        /* line-height: 1.5; */
-        font-size: 4vh;
-    
 }
 .abt{
     display: flex;
@@ -291,17 +279,7 @@ h3 {
 .my-work-content .row img:hover {
     opacity: 0.6;
 }
-.row{
-    padding: 0 0 30px 0;
-    background: #D9D9D9;
-    width: 80%;
-}
-.row a{
-    text-decoration: none;
-    color: black;
-    padding: 30px;
-    font-weight: bold;
-}
+
 h6{
     padding: 10px;
     color:black;
@@ -338,6 +316,7 @@ h6{
     color: black;
     padding: 30px;
     font-weight: bold;
+    text-align: center;
 }
 .row a:hover {
     color: #FEA609;
@@ -350,16 +329,10 @@ h6{
     margin-top: 80px;
 }
 
-.contact-me1 h4 {
-    /* padding-top: 50px; */
-    font-size: large;
+.contact-me1 p {
+
     padding-left: 5vw;
 }
-/* .contact-me1 h2 {
-    padding-top:0;
-    font-size: large;
-    padding-left: 5vw;
-} */
 
 
 
@@ -370,7 +343,6 @@ h6{
     background: none;
     margin: 0;
     width: 15vw;
-    /* padding: 2px; */
    
 }
 .cont label {
@@ -421,7 +393,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 0; */
 }
 .subs {
     margin-left: 5vw;
@@ -445,7 +416,6 @@ footer{
 }
 .cont1 i {
     font-size: 5vh;
-    /* padding: 10px; */
     margin-bottom: 5vh;
     padding-left: 1vw;
 }
@@ -514,7 +484,7 @@ footer{
 
 /* ----the start of dashboard page---- */
 .dashboard {
-    display: flex;
+    /* display: flex; */
     margin: 10vh;
     background: rgba(217, 217, 217, 0.24);
     margin-top: 2vh;
@@ -523,12 +493,28 @@ footer{
 .board-nav {
     background: #000;
     border-radius: 3vh;
-    
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+    z-index: 4;
 
+}
+.board-nav ul {
+    list-style: none;
+    /* padding-top: 2vh; */
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    
+ 
 }
 .board-nav li {
     list-style: none;
     padding-top: 2vh;
+    position: relative;
+    padding: 2vw;
  
 }
 .board-nav a {
@@ -536,9 +522,6 @@ footer{
     color: #fff;
     
 
-}
-.board-nav ul {
-    padding-left: 3vw;
 }
 .logo i {
     margin-left: 12vw;
@@ -553,10 +536,67 @@ footer{
     color: #FEA609;
 }
 .board-btn {
-    margin-left: 14vw;
+    /* margin-left: 14vw; */
     margin-bottom: 5vh;
     padding: 1vh;
     border-radius: 1vh;
+    margin-top: 5vh;
+}
+.board-btn a {
+    color: black;
+}
+.srch {
+    margin-left: 70%;
+    display: flex;
+    padding-top: 5vh;
+}
+.srch i {
+    font-size: 4vh;
+}
+.srch button {
+    background: #FEA609;
+    color: #000;
+    font-size: 4vh;
+}
+.blog-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.board-blog h1 {
+    text-align: center;
+}
+#description {
+    /* height: 40vh;
+    width: 30vw; */
+    background: none;
+    padding-top: 0;
+}
+
+#title {
+    width: 30vw;
+    height: 5vh;
+    background: none;
+}
+.choose {
+    margin-left: 20vw;
+
+}
+.smt {
+    color: #000;
+    background: #FEA609;
+    padding: 2vh;
+    border-radius: 1vw;
+    font-weight: bold;
+}
+.smt:hover {
+    opacity: 0.7;
+    color: #fff;
 }
 @media only screen and (min-width: 1440px){
 
@@ -599,50 +639,23 @@ footer{
 
     .nav-btn {
         justify-content: space-between;
-        /* margin: 20px; */
         padding-left: 10vw;
         
     }
     .nav-btn a {
-        /* font-weight: 400px; */
         font-size: 2vw;
      }
-     /* h1 {
-        font-size: 50px;
-        padding-bottom:20px;
-        padding-left: 0;
-        margin-top: 45vh;
-    
-    } */
     .home-text {
         padding-left: 2vh;
     }
     
-    /* .cv-btn button {
-        border-radius: 10px;
-        font-size: 20px;
-        background: #fff;
-        padding: 10px;
-        border: none;
-        
-    } */
-    /* .cv-btn {
-    margin-left:80%;
-       
-    } */
-    /* h4 {
-        font-size: medium;
-        line-height: 1;
-        font-size: 20px;
-        font-weight: 50;
-        margin-left: 0;
-    } */
-    .abt1 h4 {
+    .abt1 p {
         line-height: 1.5;
         font-size: 3vh;
         font-weight: 25;
+        margin-left: -6vw;
     
-}
+    }
 .abt{
     display: flex;
     margin-left: 0;
@@ -673,75 +686,7 @@ footer{
 .skill2 {
     margin-left: 5vw;
 }
-/* .skill {
-    display: flex;
-    justify-content: space-around;
-  
-} 
-.container-1{
-    display: flex;
-    justify-content: space-between;
-    width: 35%;
-    margin-left: 5%;
-  
-}
 
-.container-1 div {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
-.container-1 div i {
-    font-size: 5vh;
-    background: #FEA609;
-    padding: 10px;
-    height: 8vh;
-    width: 8vw;
-    text-align: center;
-}
-.container-2{
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-    margin-left: 5%;
-  
-}
-.container-2 div {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-
-}
-.container-2 div i {
-    font-size: 5vh;
-    background: #FEA609;
-    padding: 10px;
-    height: 8vh;
-    width: 8vw;
-    text-align: center;
-}
-
-
-h3 {
-    padding: 50px;
-    padding-left: 50px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-    font-size: 3vh;
-
-}
-.lan{
-    padding-left: 5vh;
-    font-size: 3vh;
-} */
 /* -----the start of my work----- */
 .my-work-content {
     display: grid;
@@ -817,65 +762,7 @@ h6{
 /*-------the end of blog page------*/
 /*-------the start of contact-me page------*/
 
-/* .contact-me1{
-    display: flex;
-    margin-top: 80px;
-}
 
-.contact-me1 h4 {
-    padding-top: 50px;
-    font-size: 3vh;
-    padding-left: 1vw;
-}
-
-.cont1 i {
-    font-size: 5vh;
-    padding: 10px;
-    margin-bottom: 50px;
-} */
-/* .cont input {
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    background: none;
-    margin: 0;
-    width: 250px;
-    padding: 3px;
-   
-} */
-/* .cont label {
-    font-size: 2vh;
-} */
-
-/* .cont {
-    height: auto;
-    border-radius: 50%;
-    width: auto;
-    margin-left: 40%;
-
-} */
-/* .cont form {
-    padding: 10vh; */
-    /* padding-left: 50px;
-    padding-right: 70px; */
-
-/* } */
-/* h5 {
-    padding: 20px;
-} */
-/* .send {
-    height: 80px;
-    width: 100px;
-    border-radius: 50%;
-    padding: 20px;
-    background: white;
-    color: black;
-    border-color: black;
-    border-style: solid;
-    box-shadow: #000;
-    margin-top: 360px;
-    margin-left: 10vw;
-} */
 /* ----the login page---- */
 .form1 form {
     padding: 5vh;
@@ -884,25 +771,8 @@ h6{
 .form1 label {
     font-size: 3vh;
 }
-/* .form1 button {
-    background: #FEA609;
-    margin-top:60px;
-    margin-left: 40%;
-    padding: 10px;
-    font-size: small;
-    border-radius: 10px;
-    border: none;
 
-} */
-/* .arrow i{
-    background:white;
-    border-radius: 50%;
-    margin-top: 5vh;
-    margin-left: 3vw;
-    font-size: xx-large;
-    color: black;
-    border: #000 solid;
-} */
+
 .form1 {
     background: rgba(217, 217, 217, 0.24);
     height: auto;
@@ -913,32 +783,6 @@ h6{
     border-style: none;
 
 }
-/* .form1 input {
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    background: none;
-    border-bottom: #fff solid;
-    padding: 10px;
-    width: 40vw;
-
-   
-} */
-/* .form1 label {
-
-    color: white;
-   
-} */
-/* .form1  {
-
-    background: rgba(217, 217, 217, 0.24);
-    height: auto;
-    width: auto;
-    margin: 1vh 10vh 10vh 3vh;
-    border-radius: 30px;
-    border-style: none;
-} */
-
 .form1 label {
     font-size: 3vh;
 }
@@ -1031,14 +875,6 @@ h6{
     .cv-btn {
     margin-left:70%;
      padding-top: 3vh;} 
-       
-    
-     h4 {
-        line-height: 1;
-        font-size: 2.5vh;
-        font-weight: 25;
-        margin-left: 0px;
-    } 
     .home-text {
         margin-left: 8vw;
     }
@@ -1046,12 +882,6 @@ h6{
     h2 {
         padding-top: 5vh;
     
-    }
-    .abt1 h4 {
-        line-height: 1;
-        font-size: 3vh;
-        font-weight: 25;
-        margin-left: -50px;
     }
     .abt{
         display: block;    
@@ -1112,45 +942,13 @@ h6{
         /* display: inline; */
         margin: 2vh;
     }
-    /* .my-work-content .row img {
-        max-width: 100%;
-        width: 100vw;
-        height: 16vh; 
-    }
-    .row{
-  
-        /* background: #D9D9D9; */
-        /* width: auto;
-        height: auto;
-        margin-top: 5vh;
-        
-    }*/
-    /* .row a{
-        text-decoration: none;
-        color: black;
-        font-size: large;
-    }   */
-    /*-----the end of my-work page---*/
-    /*------the start of blog--------*/
-    /* .blog-content {
-        display: block;
-    }
-    .blog-content .row img {
-        max-width: 100%;
-        width: 100vw;
-        height: 15vh;
-    } */
-    .row{
+       .row{
   
         background: #D9D9D9;
-        /* width: auto; */
-        /* height: auto; */
         margin-top: 5vh;
         
     }
     .row a{
-        /* text-decoration: none;
-        color: black; */
         font-size: 2vw;
         padding-left: 1vh;
     }
@@ -1163,12 +961,7 @@ h6{
         display: block;
         margin-top: 0;
     }
-    
-    .contact-me1 h4 {
-        padding-top: 50px;
-        font-size: 3vh;
-    }
-    
+        
     .cont1 i {
         font-size: 3vh;
         padding: 10px;
@@ -1224,35 +1017,16 @@ h6{
     /* ----the end of contact me page---- */
     /* -----the start of login page---- */
     .form1 {
-        /* background: rgba(217, 217, 217, 0.24);
-        height: auto;
-        width: auto; */
         margin-left: 25vw;
         margin-right: 25vw;
         border-radius: 30px;
-        /* border-style: none; */
     
     }
-    /* .form1 input {
-        border-right: none;
-        border-left: none;
-        border-top: none;
-        background: none;
-        border-bottom: #fff solid;
-        padding: 10px;
-        width: 200px;
-    
-       
-    } */
     .form1 label {
     
         color: white;
        
-    }
-    /* .form1 form {
-        padding: 50px;
-    } */
-    
+    }    
     .form1 label {
         font-size: 2vh;
     }
@@ -1309,16 +1083,12 @@ h6{
         margin-top: 45vh;
     
     }
-    /* h2 {
-        padding-bottom: 4vh;
-    } */
      .cv-btn button {
         border-radius: 5px;
         font-size: 3vh;
         background: #fff;
         padding: 5px;
         border: none;
-        /* margin-left: 60%; */
         
     } 
     .cv-btn {
@@ -1326,14 +1096,11 @@ h6{
     margin-left: 50%;
        
     }
-    h4 {
-        font-size: 3vh;
-        line-height: 1;
+    p {
         font-size: 2.5vh;
-        /* font-weight: 25; */
         margin-left: 0px;
     }
-    .abt1 h4 {
+    .abt1 p {
         font-size: 2.5vh;
     }
     .abt{
@@ -1388,10 +1155,6 @@ h6{
     .cont1{
         margin-top: 3vh;
     }
-    /* h2 {
-        margin-bottom: ;
-    } */
-    
 }
 /*----media Querry for homepage------*/
 @media (max-width:350px) {
@@ -1402,24 +1165,8 @@ h6{
     #menu-icon {
         margin-left: 65vw;
     }
-    /* .abt2 {
-        margin: 0;
-    
-        margin-left: 0;
-        font-size: 3vh;
-        padding-top: 0;
-    } */
-
-    /* .abt1 h4 {
-        line-height: 1;
-        font-size: 2.5vh;
-        font-weight: 25;
-        margin-left: -15vw;
-    } */
     .abt{
         display: block;    
-        /* margin-left: 0;
-        margin-top: 0; */
     }
 
      .abt1 i {
@@ -1450,7 +1197,6 @@ h6{
     .my-work-content {
         display: block;
         margin: 2vh;
-        /* height: fit-content; */
     }
     .my-work-content .row img {
         display: none;
