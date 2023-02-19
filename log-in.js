@@ -11,7 +11,7 @@ function validate() {
     if(targetUser && targetUser.password == password.value){
         localStorage.setItem('currentUser',JSON.stringify(targetUser))
         alert('successfully login')
-        window.location.href="dashboard.html";
+        window.location.href="nanone.html";
         form.onsubmit= ()=> { return true}
 
     } else if (targetUser && targetUser.password !=password.value){
