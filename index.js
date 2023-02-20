@@ -3,36 +3,87 @@ let navbar = document.querySelector('.navbar');
 document.querySelector('#menu-icon').onclick=() =>{
     navbar.classList.toggle('active');
 }
-function validation() {
-   const name= document.getElementById('name').value;
-   const email= document.getElementById('email').value;
-   const message= document.getElementById('message').value;
+// function validation() {
+   const nameEl= document.getElementById('name');
+   const emailEl= document.getElementById('email');
+   const messageEl= document.getElementById('message');
    const error_message =document.getElementById('error-message');
    const send=document.getElementById('send')
+   const form=document.getElementById('myform');
 
-   let  text;
+//    let  text;
    
-   error_message.style.padding='10px'
-   if(name.length<5){
-    text ='Please Enter valid Name';
-    error_message.innerHTML= text;
-    return false
-   }
-   else if(email==''){
-    text ='Please Enter your email';
-    error_message.innerHTML= text;
-    return false
-   }
-   else if(message.length<3){
-    text ='Please Enter the message';
-    error_message.innerHTML= text;
-    return false
-   }
-   else{
-   alert('Message submitted successfully!')
-   return }
+//    error_message.style.padding='10px'
+//    if(nameEl.length<5){
+//     text ='Please Enter valid Name';
+//     error_message.innerHTML= text;
+//     return false
+//    }
+//    else if(emailEl==''){
+//     text ='Please Enter your email';
+//     error_message.innerHTML= text;
+//     return false
+//    }
+//    else if(messageEl.length<3){
+//     text ='Please Enter the message';
+//     error_message.innerHTML= text;
+//     return false
+//    }
+//    else{
+//    alert('Message submitted successfully!')
+//     }
+
+//     // acceptMessage();
+   
+// }
+// send.onclick=acceptMessage
+//  function acceptMessage()
+
+// let message=[];
+// let acceptMessage= ()=> {
+//   message.push({
+//     newName:nameEl,
+//     newEmail:emailEl,
+//     newMessage:message
+//   })
+//   localStorage.setItem("message",JSON.stringify(message));
+//   console.log(message)
+// }
+// send.onclick= validation
+// form.addEventListener("submit",(e)=>{
+//   e.preventDefault();
+// console.log("button clicked");
+// formValidation();
+// })
+// let formValidation=()=>{
+//   if (nameEl === "") {
+//     error_message.innerHTML = "Post cannot be blank";
+//     console.log("failure");
+//   } else {
+//     console.log("successs");
+//     error_message.innerHTML = ""; 
+//   }
+// }
+let messages=[];
+function acceptMessage() {
+  // send=document.getElementById('send');
+console.log("my message")
+alert("Message sent successfully")
+   messages.push({
+    newName:nameEl.value,
+    newEmail:emailEl.value,
+    newMessage:messageEl.value,
+  });
+  localStorage.setItem("messages",JSON.stringify(messages));
+  console.log(messages)
 }
-send.onclick= validation
+send.onclick = acceptMessage
+// (() => {
+//   messages = JSON.parse(localStorage.getItem("messages")) || [];
+//   console.log(messages);
+//   acceptMessage();
+// })();
+
 
 
 // ---the blog creation
@@ -66,7 +117,6 @@ let createTasks = () => {
 
 
 //   ---the work 
-// var tasks_work=document.getElementsByClassName("tasks-work")
 let createWork = () => {
     tasks_work.innerHTML = "";
     data_work.map((x, y) => {
@@ -94,3 +144,4 @@ let createWork = () => {
     console.log(data_work);
     createWork();
   })();
+// -----the message form---

@@ -4,7 +4,7 @@ let dateInput = document.getElementById("dateInput");
 let textarea = document.getElementById("textarea");
 let file=document.getElementById("myfile")
 let msg = document.getElementById("msg");
-let tasks = document.getElementById("tasks");
+let tasks_work = document.getElementById("tasks_work");
 let add = document.getElementById("add");
 
 const image_input = document.getElementById("image_input");

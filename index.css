@@ -284,6 +284,8 @@ h3 {
     background: none;
     margin: 0;
     width: 15vw;
+    font-size: 20px;
+    color: white;
    
 }
 .cont label {
@@ -425,7 +427,7 @@ footer{
 
 /* ----the start of dashboard page---- */
 .dashboard {
-    /* display: flex; */
+    
     margin: 10vh;
     background: rgba(217, 217, 217, 0.24);
     margin-top: 2vh;
@@ -438,13 +440,12 @@ footer{
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    /* position: fixed; */
+
     z-index: 4;
 
 }
 .board-nav ul {
     list-style: none;
-    /* padding-top: 2vh; */
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -499,47 +500,38 @@ footer{
     color: #000;
     font-size: 4vh;
 }
-.blog-add {
+/* ------- the dashboard page------*/
+
+#recentMessage {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.work-add {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.board-blog h1 {
-    text-align: center;
-}
-#description {
-    /* height: 40vh;
-    width: 30vw; */
-    background: none;
-    padding-top: 0;
+    gap: 2rem;
+    position: relative;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
-#title {
-    width: 30vw;
-    height: 5vh;
-    background: none;
+#recentMessage div {
+    background: #D9D9D9;
+    width: 200px;
+    height: 300px;
+    color: black;
+    border: 5px solid rgb(50, 99, 205);
+ 
 }
-.choose {
-    margin-left: 20vw;
-
+.fw-name {
+    font-weight:bold ;
+    color: aquamarine;
 }
-.smt {
-    color: #000;
-    background: #FEA609;
-    padding: 2vh;
-    border-radius: 1vw;
-    font-weight: bold;
+.set-email {
+    font-weight: medium;
+  
+    
 }
-.smt:hover {
-    opacity: 0.7;
-    color: #fff;
+#recentMessage span {
+    color: black;
 }
-
 
 
 /* ------the start of nanone---- */
@@ -627,7 +619,7 @@ footer{
     padding: 5px;
     gap: 4px;
     width: 250px;
-    height: 90vh;
+    height: 550px;
     margin-top: 5vh;
     position: relative;
   }
@@ -655,7 +647,7 @@ footer{
     padding: 5px;
     gap: 4px;
     width: 250px;
-    height: 90vh;
+    height: 550px;
     margin-top: 5vh;
     position: relative;
   } 
