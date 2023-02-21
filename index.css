@@ -263,61 +263,60 @@ h3 {
 /*-----end of skills page*/
 /*-----the start of my-work page-----*/
 
-.my-work-content {
+/* .my-work-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px,auto));
     grid-gap: 2rem;
     align-items: center;
     cursor: pointer;
     padding: 10vh;   
+} */
+.my-work-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 50px 5vw 50px 5vw;
+    flex-wrap: wrap;
 }
-.my-work-content .row img {
-    max-width: 100%;
-    width: 50vw;
-    height: 40vh;
+ .my-work-content .row img {
+    width: 100%;
+    padding: 10px;
+    height: 300px;
 }
 .my-work-content .row img:hover {
     opacity: 0.6;
 }
 .row{
-    padding: 0 0 30px 0;
     background: #D9D9D9;
+    height: 500px;
+    width: 200px;  
     width: 80%;
+
 }
-.row a{
-    text-decoration: none;
-    color: black;
-    padding: 30px;
-    font-weight: bold;
-}
+
 h6{
     padding: 10px;
     color:black;
     font-size: small;
-}
+} 
 
 .blog-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
-    grid-gap: 2rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    cursor: pointer;
-    padding: 10vh; 
+    gap: 2rem;
+    margin: 50px 5vw 50px 5vw;
+    flex-wrap: wrap;
     
 }
 .blog-content .row img {
-    max-width: 100%;
-    width: 50vw;
-    height: 40vh;
+    width: 100%;
+    padding: 10px;
+    height: 300px;
 }
 .blog-content .row img:hover {
     opacity: 0.6;
-}
-.row{
-    padding: 0 0 30px 0;
-    background: #D9D9D9;
-    /* height: 380px; */
-    width: 80%;
 }
 .row a{
     text-decoration: none;
@@ -831,7 +830,7 @@ footer{
 }
 
 /* -----the start of my work----- */
-.my-work-content {
+/* .my-work-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px,auto));
     grid-gap: 1rem;
@@ -864,12 +863,12 @@ h6{
     padding: 10px;
     color:black;
     font-size: 1.2vw;
-}
+} */
 
 /*------the end of my-work page------*/
 /*-------the start of blog page------*/
 
-.blog-content {
+/* .blog-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px,auto));
     grid-gap: 1rem;
@@ -880,8 +879,8 @@ h6{
     display: flex;
     flex-wrap: wrap;
     
-}
-.blog-content .row img {
+} */
+/* .blog-content .row img {
     max-width: 100%;
     width: 600px;
     height: 250px;
@@ -903,7 +902,7 @@ h6{
 }
 .row a:hover {
     color: #FEA609;
-}
+} */
 /*-------the end of blog page------*/
 /*-------the start of contact-me page------*/
 
@@ -1083,8 +1082,8 @@ h6{
     }
      /*-------The start of my-work------*/
 
-     .my-work-content {
-        /* display: inline; */
+     /* .my-work-content {
+       
         margin: 2vh;
     }
        .row{
@@ -1096,10 +1095,10 @@ h6{
     .row a{
         font-size: 2vw;
         padding-left: 1vh;
-    }
-    h6{
+    } */
+    /* h6{
         display: none;
-    } 
+    }  */
     /*------the end of blog----*/
     /*-------the start of contact me-----*/
     .contact-me1{
@@ -1339,7 +1338,7 @@ h6{
         font-size: 3vh;
     }
     /* ------My work page----- */
-    .my-work-content {
+    /* .my-work-content {
         display: block;
         margin: 2vh;
     }
@@ -1362,11 +1361,11 @@ h6{
     }
     .row a{
         font-size: 3vh;
-    }
+    } */
     /* -----blog page ------*/
-    .blog-content .row img {
+    /* .blog-content .row img {
         display: none;
-    }
+    } */
     .contact-me1 {
         margin-top: 0;
     }
