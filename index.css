@@ -262,6 +262,72 @@ h3 {
 
 /*-----end of skills page*/
 /*-----the start of my-work page-----*/
+
+.my-work-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+    padding: 10vh;   
+}
+.my-work-content .row img {
+    max-width: 100%;
+    width: 50vw;
+    height: 40vh;
+}
+.my-work-content .row img:hover {
+    opacity: 0.6;
+}
+.row{
+    padding: 0 0 30px 0;
+    background: #D9D9D9;
+    width: 80%;
+}
+.row a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-weight: bold;
+}
+h6{
+    padding: 10px;
+    color:black;
+    font-size: small;
+}
+
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+    padding: 10vh; 
+    
+}
+.blog-content .row img {
+    max-width: 100%;
+    width: 50vw;
+    height: 40vh;
+}
+.blog-content .row img:hover {
+    opacity: 0.6;
+}
+.row{
+    padding: 0 0 30px 0;
+    background: #D9D9D9;
+    /* height: 380px; */
+    width: 80%;
+}
+.row a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-weight: bold;
+}
+.row a:hover {
+    color: #FEA609;
+}
 /*-------the end of blog page------*/
 /*-------the start of contact-me page------*/
 
