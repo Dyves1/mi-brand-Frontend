@@ -163,20 +163,21 @@ h2 {
  .abt-icons {
     display: flex;
     flex-direction: column;
-    font-size: 5vh;
-    /* padding: 1vw;
-    padding-top: 40px; */
+    font-size: 4vh;
     align-items: center;
-    justify-content: space-between;
     
+}
+.abt1 p {
+    font-size: 1.5vw;
 }
 .abt-icons a {
     color: #fff;
+    padding: 1vh;
 }
 .abt2 {
     margin: 0;
-    /* margin-top: 10vh; */
     font-family: verdana;
+    font-size: 1.5vw;
 }
 .abt2 i {
     padding: 10px;
@@ -201,15 +202,15 @@ h2 {
 
 .skill {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 2vw;
+    justify-content: space-between;
+    margin:0 5vw;
+   
+    
   
 } 
 .container-1{
     display: flex;
     justify-content: space-between;
-    width: 35%;
-    margin-left: 5%;
   
 }
 
@@ -223,7 +224,7 @@ h2 {
 
 }
 .container-1 div i {
-    font-size: 10vh;
+    font-size: 3rem;
     background: #FEA609;
     padding: 10px;
     text-align: center;
@@ -231,8 +232,6 @@ h2 {
 .container-2{
     display: flex;
     justify-content: space-between;
-    width: 20%;
-    margin-left: 5%;
   
 }
 .container-2 div {
@@ -265,7 +264,7 @@ h3 {
     padding-left: 5vh;
 }
 .skill2 {
-    margin-left: 30vw;
+    /* margin-left: 30vw; */
 }
 
 /*-----end of skills page*/
@@ -302,11 +301,6 @@ h3 {
 
 }
 
-/* h6{
-    padding: 10px;
-    color:black;
-    font-size: small;
-}  */
 .row p{
     color: #000;
     padding-top: 10px;
@@ -763,8 +757,9 @@ footer{
     
 
 @media only screen and (max-width: 1200px) {
-    section {
+    .home {
         padding-left:0 ;
+        width: 100vw;
     }
     .logo-text {
         margin: 0 0 0 27px;
@@ -803,45 +798,19 @@ footer{
     .home-text {
         padding-left: 2vh;
     }
-    
-    .abt1 p {
-        line-height: 1.5;
+    .abt-icons{
         font-size: 3vh;
-        font-weight: 25;
-        margin-left: -6vw;
-    
     }
-.abt{
-    display: flex;
-    margin-left: 0;
-    padding-left: 0;
-}
-.abt1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
- .abt1 i {
     
-    font-size: 4vh;
-    padding: 10px;
-    padding-top: 40px;
-}
-.abt2 {
-    margin: 0;
-    font-size: 3vh;
-    margin-left: 80px;
-}
-.abt2 i {
-    font-size: 4vh;
-    padding: 10px;
-}
+
 
 /*--------the start of Skills page---------*/
-.skill2 {
+/* .skill2 {
     margin-left: 5vw;
-}
-
+} */
+/* .skill {
+    margin-left: 5vh;
+} */
 /* -----the start of my work----- */
 
 
@@ -985,11 +954,11 @@ footer{
     }
      .abt-icons {
         flex-direction: row;
-        font-size: 4vh;
+        /* font-size: 4vh; */
     }
     .abt2 {
         margin: 0;
-        margin-left: 0;
+        /* margin-left: 0; */
     }
     .abt2 i {
         font-size: 3vh;
