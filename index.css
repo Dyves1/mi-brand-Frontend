@@ -93,19 +93,18 @@ span {
 }
 
 /*--- the start of the Homepage-----*/
-section {
+.home {
     padding: 4vh; 
     height: 100vh;
-   
-}
-.home {
     height: 100vh;
     background-color: black;
     background-image:url('now1.jpg');
     background-repeat:no-repeat;
     background-size: 50%;
     background-position: right 10px;
+   
 }
+
 .home-text {
     margin-left: 5vw;
     margin-top: 40vh;
@@ -148,27 +147,36 @@ h2 {
 }
 .abt{
     display: flex;
-    align-items: flex-start;
-    margin-top: 50px;
-    margin-left: 0;
+    /* align-items: flex-start; */
+    margin: 30px 5vw;
+    justify-content: space-between;
+
+
 }
 .abt1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5vw;
+    /* padding: 5vw; */
 
 }
- .abt1 i {
-    
+ .abt-icons {
+    display: flex;
+    flex-direction: column;
     font-size: 5vh;
-    padding: 1vw;
-    padding-top: 40px;
+    /* padding: 1vw;
+    padding-top: 40px; */
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.abt-icons a {
+    color: #fff;
 }
 .abt2 {
     margin: 0;
-    font-size: 4vh;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
+    font-family: verdana;
 }
 .abt2 i {
     padding: 10px;
@@ -263,14 +271,6 @@ h3 {
 /*-----end of skills page*/
 /*-----the start of my-work page-----*/
 
-/* .my-work-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
-    grid-gap: 2rem;
-    align-items: center;
-    cursor: pointer;
-    padding: 10vh;   
-} */
 .my-work-content {
     display: flex;
     justify-content: space-between;
@@ -281,51 +281,70 @@ h3 {
 }
  .my-work-content .row img {
     width: 100%;
-    padding: 10px;
-    height: 300px;
+    padding: 3px;
+    height: 250px;
 }
 .my-work-content .row img:hover {
     opacity: 0.6;
 }
 .row{
+
+    border: 2px solid black;
+    background-color: #e2eede;
     background: #D9D9D9;
-    height: 500px;
-    width: 200px;  
-    width: 80%;
+    border-radius: 6px;
+    padding: 5px;
+ 
+    width: 250px;
+    height: 550px;
+    margin-top: 5vh;
+    position: relative;
 
 }
 
-h6{
+/* h6{
     padding: 10px;
     color:black;
     font-size: small;
-} 
+}  */
+.row p{
+    color: #000;
+    padding-top: 10px;
+}
 
 .blog-content {
+
     display: flex;
+    color: #000;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-    margin: 50px 5vw 50px 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 
     
 }
 .blog-content .row img {
     width: 100%;
-    padding: 10px;
-    height: 300px;
+    padding: 3px;
+    height: 250px;
 }
 .blog-content .row img:hover {
     opacity: 0.6;
 }
 .row a{
     text-decoration: none;
-    color: black;
-    padding: 30px;
-    font-weight: bold;
+    color: #000;
+    font-weight:bold ;
+    padding-left: 20px;
 }
 .row a:hover {
     color: #FEA609;
+}
+.row p a {
+   
+    text-decoration: underline;
+    font-weight: normal;
 }
 /*-------the end of blog page------*/
 /*-------the start of contact-me page------*/
@@ -693,11 +712,6 @@ footer{
    gap: 2rem;
    position: absolute;
    bottom: 30px;
-
-
-
-   
-
   }
   
   #tasks div .options i {
@@ -748,8 +762,7 @@ footer{
 }
     
 
-@media only screen and (max-width: 1200px) 
-{
+@media only screen and (max-width: 1200px) {
     section {
         padding-left:0 ;
     }
@@ -830,79 +843,12 @@ footer{
 }
 
 /* -----the start of my work----- */
-/* .my-work-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
-    grid-gap: 1rem;
-    align-items: center;
-    cursor: pointer;
-    padding: 0; 
-    padding-left: 4vw;  
-}
-.my-work-content .row img {
-    max-width: 100%;
-    width: 600px;
-    height: 250px;
-}
-.my-work-content .row img:hover {
-    opacity: 0.6;
-}
-.row{
-    padding: 0 0 30px 0;
-    background: #D9D9D9;
-    width: 80%;
-}
-.row a{
-    text-decoration: none;
-    color: black;
-    padding: 30px;
-    font-weight: medium;
-    font-size: 2vh;
-}
-h6{
-    padding: 10px;
-    color:black;
-    font-size: 1.2vw;
-} */
+
 
 /*------the end of my-work page------*/
 /*-------the start of blog page------*/
 
-/* .blog-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
-    grid-gap: 1rem;
-    align-items: center;
-    cursor: pointer;
-    padding: 0; 
-    padding-left: 4vw;
-    display: flex;
-    flex-wrap: wrap;
-    
-} */
-/* .blog-content .row img {
-    max-width: 100%;
-    width: 600px;
-    height: 250px;
-}
-.blog-content .row img:hover {
-    opacity: 0.6;
-}
-.row{
-    padding: 0 0 30px 0;
-    background: #D9D9D9;
-    height: 380px;
-    width: 80%;
-}
-.row a{
-    text-decoration: none;
-    color: black;
-    padding: 30px;
-    font-weight: bold;
-}
-.row a:hover {
-    color: #FEA609;
-} */
+
 /*-------the end of blog page------*/
 /*-------the start of contact-me page------*/
 
@@ -1037,11 +983,9 @@ h6{
         align-items: center;
         padding: 40px;
     }
-     .abt1 i {
-        
+     .abt-icons {
+        flex-direction: row;
         font-size: 4vh;
-        padding: 5px;
-        padding-top: 40px;
     }
     .abt2 {
         margin: 0;
