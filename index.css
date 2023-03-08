@@ -430,7 +430,49 @@ footer{
 .cont1{
     margin-top: 3vh;
 }
+/* -----the start of signup page----- */
 
+.signup {
+    background: rgba(0, 0, 0, 0.489);
+    margin:20vh 50vh;
+    padding: 60px;
+}
+.signup-button{
+    background: #FEA609;
+    font-size: 3vh;
+    padding :10px;
+}
+
+/* ----the comment section------- */
+.comment {
+    background: rgba(0, 0, 0, 0.489);
+    margin:20vh 50vh;
+    padding: 60px;
+}
+.comment input{
+    border: #fff solid;
+    margin: 0;
+    width: 15vw;
+    font-size: 20px;
+    color: white;
+    width: 70vh;
+    background: none;
+    color: white;
+}
+.comment textarea{
+    border: #fff solid;
+    background: none;
+    margin: 0;
+    width: 15vw;
+    font-size: 20px;
+    color: white;
+    width: 70vh;
+}
+.comment-button{
+    background: #FEA609;
+    font-size: 3vh;
+    padding :10px;
+}
 
 /*------the start of login page------*/
 .arrow i{
@@ -471,14 +513,29 @@ footer{
 .form1 label {
     font-size: x-large;
 }
-.form1 button {
+.form1 #log-in {
     background: #FEA609;
-    margin-top:20px;
-    margin-left: 70%;
     padding: 10px;
     font-size: 4vh;
     border-radius: 10px;
     border: none;
+
+}
+.form1 #sign-up {
+    background: white;
+    margin-left: 40%;
+    padding: 10px;
+    font-size: 4vh;
+    border-radius: 10px;
+    border: none;
+
+}
+.form1 #sign-up a {
+    padding: 10px;
+    font-size: 4vh;
+    border-radius: 10px;
+    color: #000;
+    text-decoration: none;
 
 }
 .form1 button:hover {

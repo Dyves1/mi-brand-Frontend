@@ -3,11 +3,11 @@ const emailField= document.getElementById('email');
 const password= document.getElementById('password');
 const role= document.getElementById('role');
 const signup= document.getElementById('signup');
-const listUsers= document.getElementById('listUsers');
-const showUsers= document.getElementById('showUsers');
 const error_message=document.getElementById('error-message')
 const re= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 users = JSON.parse(localStorage.getItem('users')) || []
+
+
 function saveUsers() {
     let user ={};
     user.firstName= nameField.value.split(' ')[0];
@@ -30,11 +30,6 @@ function saveUsers() {
         error_message.innerHTML=text;
         return false
     } 
-    // else if (email.value.match(re)){
-    //     text ='Please Enter the valid emall';
-    //     error_message.innerHTML=text;
-    //     return false
-    // }
     else if (password.value==''){
         text ='Please Enter the password';
         error_message.innerHTML=text;
@@ -52,16 +47,16 @@ function saveUsers() {
     }
     else{
         alert('Successfully Signed up')
-        //  window.location.href(login.html)
-        // window.location.replace('login.html')
+
     }
     
 }
 
-// function displayUsers() {
-//     users.forEach((user,index)=>{
-//         listUsers.innerHTML+= `<li>user number ${index} is ${user.firstName} ${user.lastName}<li>`
-//     })
+
+// signup.onclick=saveUsers;
+
+// function saveUsers(){
+//     alert("hello world")
 // }
-signup.onclick=saveUsers;
-// showUsers.onclick=displayUsers;
+
+signup.onclick=saveUsers
