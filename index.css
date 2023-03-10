@@ -459,7 +459,7 @@ footer{
     background: none;
     color: white;
 }
-.comment textarea{
+.comment #comment{
     border: #fff solid;
     background: none;
     margin: 0;
@@ -468,6 +468,7 @@ footer{
     color: white;
     width: 70vh;
 }
+
 .comment-button{
     background: #FEA609;
     font-size: 3vh;
@@ -681,7 +682,7 @@ footer{
   #msg {
     color: red;
   }
-  #tasks {
+  #tasks_blog {
 
     display: flex;
     color: #000;
@@ -732,7 +733,7 @@ footer{
   }
 
   
-  #tasks div {
+  #tasks_blog div {
     border: 2px solid black;
     background-color: #e2eede;
     background: #D9D9D9;
@@ -791,7 +792,33 @@ footer{
   }
 
 
+  table {
+    /* width: 800px; */
+    margin: 50px auto;
+    background-color: rgb(16, 16, 16);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    /* text-align: center; */
+  }
+  
+  th {
+    background-color: #ddd;
+    font-weight: bold;
+    /* padding-right:20vh; */
+    background: none;
+  }
 
+  
+  td {
+    border-bottom: 1px solid #ddd;
+  }
 @media only screen and (min-width: 1440px){
 
 

@@ -21,90 +21,61 @@ image_input.addEventListener("change",function(){
 })
 console.log(uploaded_image)
 
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  formValidation();
+
+
+  // have our values in one object
+  const data = { image:uploaded_image,title:textInput.value,content:textarea.value };
+console.log (data)
+//   // interaction with the API endpoint
+  fetch('http://localhost:3000/api/v1/works', {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
+  .then((response) => {
+    return response.json()
+  })
+  .then((data) => {
+    if (data.ok){
+      alert(data.message)
+    } else {
+      alert(data.errors)
+    }
+  })
+  .catch(error => alert(error))
 });
 
-let formValidation = () => {
-  if (textInput.value === "") {
-    console.log("failure");
-    msg.innerHTML = "Task cannot be blank";
-  } else {
-    console.log("success");
-    msg.innerHTML = "";
-  }
-  acceptData();
-  add.setAttribute("data-bs-dismiss", "modal");
-  add.click();
 
-  (() => {
-    add.setAttribute("data-bs-dismiss", "");
-  })();
-};
+fetch('http://localhost:3000/api/v1/works')
+.then((response) => response.json())
+.then((works) => {
+  console.log(works)
 
-let data_work = [];
+  works.data.forEach(work => {
 
-let acceptData = () => {
-  data_work.push({
-    uploaded_image,
-    text: textInput.value,
-    date: dateInput.value,
-    description: textarea.value,
-  });
 
-  localStorage.setItem("data_work", JSON.stringify(data_work));
-
-  console.log(data_work);
-  createWork();
-};
-let createWork = () => {
-  tasks_work.innerHTML = "";
-  data_work.map((x, y) => {
-    return (tasks_work.innerHTML += `
+    tasks_work.innerHTML=""
+    works.data.forEach(blog => {
+      return (tasks_work.innerHTML += `
+        
+      <div id=${tasks_work}>
+           <img src="${work.image}" class="img-blog"><br>
+            <span class="fw-bold">${work.title}</span><br>
+            <p>${work.content}</p><br>  
+            <span class="options">
+              <i onClick= "editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit" id ="edit"></i>
+              <i onClick ="deleteTask(this);createTasks()" class="fas fa-trash-alt" id="del"></i>
+            </span>
+      </div>
+      `);
     
-    <div id=${y}>
-         <img src="${x.uploaded_image}" class="img-blog"> <br>
-          <span class="fw-bold">${x.text}</span><br>
-          <span class="set-date">${x.date}</span><br>
-          <p>${x.description}</p><br>  
-          <span class="options">
-            <i onClick= "editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit" id ="edit"></i>
-            <i onClick ="deleteTask(this);createWorks()" class="fas fa-trash-alt" id="del"></i>
-          </span>
-    </div>
-    `);
-  });
+    
+      })
 
-  resetForm();
-};
-let resetForm = () => {
-  uploaded_image ="";
-  textInput.value = "";
-  dateInput.value = "";
-  textarea.value = "";
-};
-
-let deleteTask = (e) => {
-  e.parentElement.parentElement.remove();
-
-  data_work.splice(e.parentElement.parentElement.id, 1);
-
-  localStorage.setItem("data_work", JSON.stringify(data_work));
-
-  console.log(data_work);
-};
-let editTask = (e) => {
-  let selectedTask = e.parentElement.parentElement;
-  uploaded_image = selectedTask.children[0].innerHTML;
-  textInput.value = selectedTask.children[1].innerHTML;
-  dateInput.value = selectedTask.children[2].innerHTML;
-  textarea.value = selectedTask.children[3].innerHTML;
-
-  deleteTask(e);
-};
-(() => {
-  data_work = JSON.parse(localStorage.getItem("data_work")) || [];
-  console.log(data_work);
-  createWork();
-})();
+})
+})
