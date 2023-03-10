@@ -104,3 +104,42 @@ fetch('http://localhost:3000/api/v1/comments')
   })
 })
 })
+
+const tasks_message = document.getElementById("tasks-message");
+fetch('http://localhost:3000/api/v1/messages')
+.then((response) => response.json())
+.then((messages) => {
+  console.log(messages)
+
+  messages.data.forEach(message => {
+  const row = document.createElement("tr")
+  const nameCell = document.createElement("td");
+  const emailCell = document.createElement("td");
+  const contentCell = document.createElement("td")
+  const actionsCell = document.createElement("td")
+
+  const replyButton = document.createElement("button")
+
+  // assign values to the cells
+  nameCell.textContent = message.name;
+  emailCell.textContent = message.email;
+  contentCell.textContent = message.content;
+  replyButton.textContent = "reply"
+
+  actionsCell.appendChild(replyButton)
+  console.log(row)
+
+  // append rows
+  row.appendChild(nameCell)
+  row.appendChild(emailCell)
+  row.appendChild(contentCell)
+  row.appendChild(actionsCell)
+
+  // append table body
+  tasks_message.querySelector("tbody").appendChild(row)
+
+  replyButton.addEventListener("click", () => {
+    deleteBook(book._id)
+  })
+})
+})

@@ -23,23 +23,44 @@
                 <li><a href="#board-home">Dashboard</a> </li>
                 <li><a href="blogs.html"><i class="fa-solid fa-blog"></i>Blogs</a> </li>
                 <li><a href="work.html"><i class="fa-thin fa-briefcase-blank"></i>Work</a> </li>
-                <li><a href="#board-comments"><i class="fa-solid fa-comment"></i>comments</a> </li>
                 <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a> </li>
             </ul>
             <button class="board-btn"><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i>logout</a></button>
 
         </div>
         <div class="board-home">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="srch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="search here" title="Enter what you want to search">
+                <button>search</button>
+             </div>
             <!-- the dashboard page -->
+            
             <div>
-                <h2>Dashboard</h2>
-                <p>hi Didier Yves</p>
-                <div>
+                <h2>HI DIDIER YVES</h2>
+                <!-- <p>hi Didier Yves</p> -->
+                <!-- <div>
                     <h3>Latest release</h3>
                     <div>likes</div>
                     
-                </div>
+                </div> -->
+                <h2>Recent messages</h2>
+                <!-- <div id="recentComments"> -->
+                    <table id="tasks-message">
+                        <thead>
+                          <tr>
+                            <th>name</th>
+                            <th>email</th>
+                            <th>content</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+
+                <!-- </div> -->
+
+            </div>
                 <div>
                     <h2>Recent comment</h2>
                     <!-- <div id="recentComments"> -->
@@ -58,13 +79,7 @@
                     <!-- </div> -->
 
                 </div>
-                <div>
-                    <h2>Recent messages</h2>
-                    <div id="recentMessage">
 
-                    </div>
-
-                </div>
 
             </div>
 
