@@ -55,9 +55,15 @@ form.addEventListener("submit", (event) => {
    }
   })
   .catch(error => alert(error))
+  resetForm()
   });
 
-
+  const resetForm=()=>{
+  
+    emailEl.value=""
+    nameEl.value=""
+    commentEl.value=""
+  }
 
 
 // ---the blog creation
@@ -100,7 +106,7 @@ form.addEventListener("submit", (event) => {
             <span class="options">
             <i onClick= "editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fa-regular fa-heart" id ="like"></i>
            
-            <i onClick ="deleteTask(this);createTasks()" class="fa-solid fa-comment" id="comment"></i>
+            <i onClick ="createComments(${blog._id})" class="fa-solid fa-comment" id="comment"></i>
           </span> 
 
       </div>

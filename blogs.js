@@ -55,6 +55,7 @@ console.log (data)
     }
   })
   .catch(error => alert(error))
+  resetForm()
 });
 
 // let formValidation = () => {
@@ -74,14 +75,6 @@ console.log (data)
 //     add.setAttribute("data-bs-dismiss", "");
 //   })();
 // };
-
-
-
-// let acceptData = () => {
-fetch('http://localhost:3000/api/v1/blogs')
-.then((response) => response.json())
-.then((blogs) => {
-  console.log(blogs)
 // })
 // let data = [];
 
@@ -161,21 +154,125 @@ fetch('http://localhost:3000/api/v1/blogs')
 //   console.log(data);
 //   // createTasks();
 // })();
-tasks_blog.innerHTML=""
-blogs.data.forEach(blog => {
-  return (tasks_blog.innerHTML += `
+// tasks_blog.innerHTML=""
+
+
+// let acceptData = () => {
+
+
+// fetch('http://localhost:3000/api/v1/blogs')
+// .then((response) => response.json())
+// .then((blogs) => {
+//   console.log(blogs)
+
+// blogs.data.forEach(blog => {
+//   return (tasks_blog.innerHTML += `
     
-  <div id=${tasks_blog}>
-       <img src="${blog.image}" class="img-blog"><br>
-        <span class="fw-bold">${blog.title}</span><br>
-        <p>${blog.content}</p><br>  
-        <span class="options">
-          <i onClick= "editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit" id ="edit"></i>
-          <i onClick ="deleteTask(this);createTasks()" class="fas fa-trash-alt" id="del"></i>
-        </span>
-  </div>
-  `);
+//   <div id=${tasks_blog}>
+//        <img src="${blog.image}" class="img-blog"><br>
+//         <span class="fw-bold">${blog.title}</span><br>
+//         <p>${blog.content}</p><br>  
+//         <span class="options">
+//           <i onclick= "editTask(${blog._id})" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit" id ="edit"></i>
+//           <button onclick ="deleteTask(${blog.title})" ><i  class="fas fa-trash-alt" id="del"></i> </button>
+//         </span>
+//   </div>
+//   `);
+
+  
+//   })
+//   resetForm()
+// })
 
 
+
+const tasks_blogs = document.getElementById("tasks");
+fetch('http://localhost:3000/api/v1/blogs')
+.then((response) => response.json())
+.then((blogs) => {
+  console.log(blogs)
+
+  blogs.data.forEach(blog => {
+  const row = document.createElement("tr")
+  const imageCell = document.createElement("td");
+  const titleCell = document.createElement("td");
+  const contentCell = document.createElement("td")
+  const actionsCell = document.createElement("td")
+  
+
+  const updateButton = document.createElement("button")
+  const deleteButton = document.createElement("button")
+
+  // assign values to the cells
+
+  imageCell.innerHTML+=`<img src="${blog.image}" class="img-blog">`
+  titleCell.textContent = blog.title;
+  contentCell.textContent = blog.content;
+  updateButton.textContent = "update"
+  deleteButton.textContent = "delete"
+
+  actionsCell.appendChild(updateButton)
+  actionsCell.appendChild(deleteButton)
+  console.log(row)
+
+  // append rows
+  row.appendChild(imageCell)
+  row.appendChild(titleCell)
+  row.appendChild(contentCell)
+  row.appendChild(actionsCell)
+
+  // append table body
+  tasks_blogs.querySelector("tbody").appendChild(row)
+
+  deleteButton.addEventListener("click", () => {
+    deleteBlog(blog._id)
+  })
+  updateButton.addEventListener("click", () => {
+    updateBlog(blog._id)
   })
 })
+})
+function deleteBlog(id) {
+  console.log(id)
+  fetch(`http://localhost:3000/api/v1/blogs/${id}`, {
+    method: "DELETE",   
+     headers: {
+      "Content-Type": "application/json, charset=UTF-8"
+    },
+    body: null
+  })
+  .then((response) => response.json())
+  .then((blogs) => {
+    // functionalities of delete
+  })
+  resetForm()
+}
+function updateBlog(id) {
+  console.log(id)
+  fetch(`http://localhost:3000/api/v1/blogs/${id}`, {
+    method: "PUT",   
+     headers: {
+      "Content-Type": "application/json, charset=UTF-8"
+    },
+    body: JSON.stringify(id)
+  })
+  .then((response) => response.json())
+  .then((data) => {
+      let selectedTask = id.parentElement.parentElement;
+  uploaded_image = selectedTask.children[0].innerHTML;
+  textInput.value = selectedTask.children[1].innerHTML;
+  dateInput.value = selectedTask.children[2].innerHTML;
+  textarea.value = selectedTask.children[3].innerHTML;
+
+  deleteBlog(id);
+    // functionalities of delete
+  })
+  resetForm()
+}
+
+const resetForm=()=>{
+  uploaded_image="";
+  textInput.value=""
+  textarea.value=""
+}
+

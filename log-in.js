@@ -80,18 +80,7 @@ form.addEventListener("submit", (e) => {
     // alert(data.message)
 //       // set our token in LS
      localStorage.setItem("authToken", data.token)
-
-    //  if ({isAdmin:true}){
-        alert("welcome admin")
-        return location.href="dashboard.html"
-        
-    //  }
-    //  else if({isAdmin:false})
-    // {
-    //     alert(data.message)
-    //    return location.href="comment.html"
-    //  }
-    
+     location.href="dashboard.html"    
     } else {
       alert(data.message)
     }

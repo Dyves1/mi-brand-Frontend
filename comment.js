@@ -50,4 +50,10 @@ form.addEventListener("submit", (event) => {
     }
   })
   .catch(error => alert(error))
+  resetForm()
 });
+const resetForm=()=>{
+  
+  emailEl.value=""
+  commentEl.value=""
+}

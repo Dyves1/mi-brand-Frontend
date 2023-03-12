@@ -48,6 +48,7 @@ console.log (data)
     }
   })
   .catch(error => alert(error))
+  resetForm()
 });
 
 
@@ -56,11 +57,11 @@ fetch('http://localhost:3000/api/v1/works')
 .then((works) => {
   console.log(works)
 
-  works.data.forEach(work => {
+  // works.data.forEach(work => {
 
 
     tasks_work.innerHTML=""
-    works.data.forEach(blog => {
+    works.data.forEach(work => {
       return (tasks_work.innerHTML += `
         
       <div id=${tasks_work}>
@@ -68,14 +69,41 @@ fetch('http://localhost:3000/api/v1/works')
             <span class="fw-bold">${work.title}</span><br>
             <p>${work.content}</p><br>  
             <span class="options">
-              <i onClick= "editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit" id ="edit"></i>
-              <i onClick ="deleteTask(this);createTasks()" class="fas fa-trash-alt" id="del"></i>
+              <i onclick= "editTask()" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit" id ="edit"></i>
+              <i onclick ="deleteWork(${work._id})" class="fas fa-trash-alt" id="del"></i>
             </span>
       </div>
-      `);
-    
-    
+      `     
+
+      );
+
       })
 
+
+      resetForm()
+      // deleteTask()
 })
-})
+// })
+const resetForm=()=>{
+  uploaded_image="";
+  textInput.value=""
+  textarea.value=""
+}
+
+function deleteWork(_id){
+  const workId= 
+  console.log()
+// e.preventDefault()
+// const id=document.getElementById("workId").textContent
+  // fetch(`http://localhost:3000/api/v1/works/${id}`, {
+  //   method: 'DELETE',
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  // }).then(() => {
+
+  //    console.log('removed');
+  // }).catch(err => {
+  //   console.error(err)
+  // });
+}

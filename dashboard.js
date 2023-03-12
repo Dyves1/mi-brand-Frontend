@@ -100,7 +100,7 @@ fetch('http://localhost:3000/api/v1/comments')
   tasks.querySelector("tbody").appendChild(row)
 
   replyButton.addEventListener("click", () => {
-    deleteBook(book._id)
+    replyComment(comment._id)
   })
 })
 })
