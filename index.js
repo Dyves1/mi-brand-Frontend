@@ -62,6 +62,7 @@ form.addEventListener("submit", (event) => {
   
     emailEl.value=""
     nameEl.value=""
+    messageEl.value=""
     commentEl.value=""
   }
 
@@ -72,15 +73,8 @@ form.addEventListener("submit", (event) => {
   .then((response) => response.json())
   .then((blogs) => {
     console.log(blogs) 
-    tasks_blog.innerHTML = "";
-    blogs.data.forEach(blog=>{
-      // uploaded_image.textContent= blog.image;
-      // title.textContent = blog.title;
-      // content.textContent = blog.content;
-      // console.log(blog.title)
-    console.log(tasks_blog)
+    // tasks_blog.innerHTML = "";
 
-    // })
     // tasks.data.map((x, y) => {
     //   return (tasks.innerHTML += `
       
@@ -96,22 +90,24 @@ form.addEventListener("submit", (event) => {
 
     //   </div>
     //   `);})
-
+    blogs.data.forEach(blog=>{
       return (tasks_blog.innerHTML += `
       
-      <div id=${tasks_blog}>
+      <div id="${tasks_blog}">
            <img src="${blog.image}" class="img-blog"> <br><br>
             <span class="fw-bold">${blog.title}</span><br><br>
             <p>${blog.content}</p> <br><br>
             <span class="options">
-            <i onClick= "editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fa-regular fa-heart" id ="like"></i>
-           
-            <i onClick ="createComments(${blog._id})" class="fa-solid fa-comment" id="comment"></i>
+            <i onclick= "likeTasks(${blog.title})"  class="fa-regular fa-heart" id ="like"></i>
+            <i onclick ="createComments(${blog.title})" class="fa-solid fa-comment" id="comment"></i>
           </span> 
 
       </div>
       `);
     });})
+     function likeTask(title){
+      console.log("kkkkk")
+    }
 
     fetch('http://localhost:3000/api/v1/works')
     .then((response) => response.json())
@@ -127,9 +123,9 @@ form.addEventListener("submit", (event) => {
               <span class="fw-bold">${work.title}</span><br><br>
               <p>${work.content}</p> <br><br>
               <span class="options">
-              <i onClick= "editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fa-regular fa-heart" id ="like"></i>
+              <i onClick= "likeTask(${work.title})" data-bs-toggle="modal" data-bs-target="#form" class="fa-regular fa-heart" id ="like"></i>
              
-              <i onClick ="deleteTask(this);createTasks()" class="fa-solid fa-comment" id="comment"></i>
+              <i onClick ="deleteTask(${work.title});createTasks()" class="fa-solid fa-comment" id="comment"></i>
             </span> 
   
         </div>

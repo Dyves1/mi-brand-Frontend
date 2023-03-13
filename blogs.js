@@ -35,7 +35,7 @@ form.addEventListener("submit", (e) => {
 
   // have our values in one object
   const data = { image:uploaded_image,title:textInput.value,content:textarea.value };
-console.log (data)
+ console.log (data)
 //   // interaction with the API endpoint
   fetch('http://localhost:3000/api/v1/blogs', {
     method: "POST",
@@ -52,10 +52,10 @@ console.log (data)
       alert(data.message)
     } else {
       alert(data.errors)
-    }
+    } 
   })
   .catch(error => alert(error))
-  resetForm()
+  resetForm();
 });
 
 // let formValidation = () => {
@@ -224,16 +224,19 @@ fetch('http://localhost:3000/api/v1/blogs')
   // append table body
   tasks_blogs.querySelector("tbody").appendChild(row)
 
-  deleteButton.addEventListener("click", () => {
+  deleteButton.addEventListener("click", (e) => {
+    e.preventDefault
     deleteBlog(blog._id)
   })
-  updateButton.addEventListener("click", () => {
+  updateButton.addEventListener("click", (e) => {
     updateBlog(blog._id)
   })
+  // editTask(this)
 })
 })
 function deleteBlog(id) {
   console.log(id)
+  if (confirm("Are you sure you want to delete?")) {
   fetch(`http://localhost:3000/api/v1/blogs/${id}`, {
     method: "DELETE",   
      headers: {
@@ -242,12 +245,30 @@ function deleteBlog(id) {
     body: null
   })
   .then((response) => response.json())
-  .then((blogs) => {
+  .then((data) => {
     // functionalities of delete
-  })
+    if (data.ok){
+      alert(data.message)    } 
+      else {
+        alert(data.errors)
+      
+  }
+})
+  .catch(error => alert(error))
   resetForm()
+} else {
+    alert("No blog deleted")
 }
-function updateBlog(id) {
+window.location.reload();
+}
+
+
+
+
+
+ function updateBlog(id) {
+  
+
   console.log(id)
   fetch(`http://localhost:3000/api/v1/blogs/${id}`, {
     method: "PUT",   
@@ -258,20 +279,22 @@ function updateBlog(id) {
   })
   .then((response) => response.json())
   .then((data) => {
-      let selectedTask = id.parentElement.parentElement;
-  uploaded_image = selectedTask.children[0].innerHTML;
-  textInput.value = selectedTask.children[1].innerHTML;
-  dateInput.value = selectedTask.children[2].innerHTML;
-  textarea.value = selectedTask.children[3].innerHTML;
+    console.log(data)
+    if (data.ok){
+      alert(data.message)
+    } else {
+      alert(data.errors)
+    }
 
-  deleteBlog(id);
+  
     // functionalities of delete
   })
   resetForm()
+  window.location.reload();
 }
 
 const resetForm=()=>{
-  uploaded_image="";
+  image_input.value="";
   textInput.value=""
   textarea.value=""
 }
